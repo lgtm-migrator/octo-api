@@ -10,3 +10,18 @@ license: 'MIT'
 short_desc: 'Python interface to the Octopus Energy API.'
 
 enable_conda: False
+
+
+extra_sphinx_extensions:
+  - attr_utils.autoattrs
+  - attr_utils.annotations
+  - enum_tools.autoenum
+
+sphinx_conf_epilogue:
+  - overloads_location = "bottom"
+
+python_versions:
+  - 3.6
+  - 3.7
+  - 3.8
+  - 3.9-dev

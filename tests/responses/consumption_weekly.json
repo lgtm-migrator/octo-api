@@ -1,0 +1,47 @@
+{
+  "count": 8,
+  "next": null,
+  "previous": null,
+  "results": [
+    {
+      "consumption": 114.734,
+      "interval_start": "2020-09-28T00:00:00+01:00",
+      "interval_end": "2020-10-03T00:30:00+01:00"
+    },
+    {
+      "consumption": 158.219,
+      "interval_start": "2020-09-21T00:00:00+01:00",
+      "interval_end": "2020-09-28T00:00:00+01:00"
+    },
+    {
+      "consumption": 134.52,
+      "interval_start": "2020-09-14T00:00:00+01:00",
+      "interval_end": "2020-09-21T00:00:00+01:00"
+    },
+    {
+      "consumption": 163.553,
+      "interval_start": "2020-09-07T00:00:00+01:00",
+      "interval_end": "2020-09-14T00:00:00+01:00"
+    },
+    {
+      "consumption": 163.516,
+      "interval_start": "2020-08-31T00:00:00+01:00",
+      "interval_end": "2020-09-07T00:00:00+01:00"
+    },
+    {
+      "consumption": 185.26,
+      "interval_start": "2020-08-24T00:00:00+01:00",
+      "interval_end": "2020-08-31T00:00:00+01:00"
+    },
+    {
+      "consumption": 143.432,
+      "interval_start": "2020-08-17T00:00:00+01:00",
+      "interval_end": "2020-08-24T00:00:00+01:00"
+    },
+    {
+      "consumption": 101.438,
+      "interval_start": "2020-08-12T00:30:00+01:00",
+      "interval_end": "2020-08-17T00:00:00+01:00"
+    }
+  ]
+}

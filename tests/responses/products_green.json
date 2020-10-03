@@ -1,0 +1,775 @@
+{
+  "count": 32,
+  "next": null,
+  "previous": null,
+  "results": [
+    {
+      "code": "AGILE-18-02-21",
+      "direction": "IMPORT",
+      "full_name": "Agile Octopus February 2018",
+      "display_name": "Agile Octopus",
+      "description": "",
+      "is_variable": true,
+      "is_green": true,
+      "is_tracker": false,
+      "is_prepay": false,
+      "is_business": false,
+      "is_restricted": false,
+      "term": 12,
+      "available_from": "2017-01-01T00:00:00Z",
+      "available_to": null,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/AGILE-18-02-21/",
+          "method": "GET",
+          "rel": "self"
+        }
+      ],
+      "brand": "OCTOPUS_ENERGY"
+    },
+    {
+      "code": "AGILE-OUTGOING-19-05-13",
+      "direction": "EXPORT",
+      "full_name": "Agile Outgoing Octopus May 2019",
+      "display_name": "Agile Outgoing Octopus",
+      "description": "Outgoing Octopus Agile rate pays you for all your exported energy based on the day-ahead wholesale rate.",
+      "is_variable": false,
+      "is_green": true,
+      "is_tracker": false,
+      "is_prepay": false,
+      "is_business": false,
+      "is_restricted": false,
+      "term": null,
+      "available_from": "2018-01-01T00:00:00Z",
+      "available_to": null,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/AGILE-OUTGOING-19-05-13/",
+          "method": "GET",
+          "rel": "self"
+        }
+      ],
+      "brand": "OCTOPUS_ENERGY"
+    },
+    {
+      "code": "CP-12M-20-09-22",
+      "direction": "IMPORT",
+      "full_name": "Co-op Community Power 12M Fixed September 2020 v2",
+      "display_name": "Co-op Community Power",
+      "description": "This tariff features 100% renewable electricity and fixes your unit rates and standing charge for 12 months. There are no exit fees, so if you change your mind, you're in control.",
+      "is_variable": false,
+      "is_green": true,
+      "is_tracker": false,
+      "is_prepay": false,
+      "is_business": false,
+      "is_restricted": false,
+      "term": 12,
+      "available_from": "2020-09-22T00:00:00+01:00",
+      "available_to": null,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/CP-12M-20-09-22/",
+          "method": "GET",
+          "rel": "self"
+        }
+      ],
+      "brand": "COOP_ENERGY"
+    },
+    {
+      "code": "GO-18-06-12",
+      "direction": "IMPORT",
+      "full_name": "Octopus Go June 2018",
+      "display_name": "Octopus Go",
+      "description": "",
+      "is_variable": true,
+      "is_green": true,
+      "is_tracker": false,
+      "is_prepay": false,
+      "is_business": false,
+      "is_restricted": false,
+      "term": 12,
+      "available_from": "2018-06-13T00:00:00+01:00",
+      "available_to": null,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/GO-18-06-12/",
+          "method": "GET",
+          "rel": "self"
+        }
+      ],
+      "brand": "OCTOPUS_ENERGY"
+    },
+    {
+      "code": "GO-3H-0030",
+      "direction": "IMPORT",
+      "full_name": "Octopus Go Faster (3H from 0030) December 2019 v1",
+      "display_name": "Octopus Go Faster",
+      "description": "Octopus Go Faster (3H from 0030)",
+      "is_variable": true,
+      "is_green": true,
+      "is_tracker": false,
+      "is_prepay": false,
+      "is_business": false,
+      "is_restricted": false,
+      "term": 12,
+      "available_from": "2019-12-10T00:00:00Z",
+      "available_to": null,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/GO-3H-0030/",
+          "method": "GET",
+          "rel": "self"
+        }
+      ],
+      "brand": "OCTOPUS_ENERGY"
+    },
+    {
+      "code": "GO-3H-0130",
+      "direction": "IMPORT",
+      "full_name": "Octopus Go Faster (3H from 0130) December 2019 v1",
+      "display_name": "Octopus Go Faster",
+      "description": "Octopus Go Faster (3H from 0130)",
+      "is_variable": true,
+      "is_green": true,
+      "is_tracker": false,
+      "is_prepay": false,
+      "is_business": false,
+      "is_restricted": false,
+      "term": 12,
+      "available_from": "2019-12-10T00:00:00Z",
+      "available_to": null,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/GO-3H-0130/",
+          "method": "GET",
+          "rel": "self"
+        }
+      ],
+      "brand": "OCTOPUS_ENERGY"
+    },
+    {
+      "code": "GO-3H-0230",
+      "direction": "IMPORT",
+      "full_name": "Octopus Go Faster (3H from 0230) December 2019 v1",
+      "display_name": "Octopus Go Faster",
+      "description": "Octopus Go Faster (3H from 0230)",
+      "is_variable": true,
+      "is_green": true,
+      "is_tracker": false,
+      "is_prepay": false,
+      "is_business": false,
+      "is_restricted": false,
+      "term": 12,
+      "available_from": "2019-12-10T00:00:00Z",
+      "available_to": null,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/GO-3H-0230/",
+          "method": "GET",
+          "rel": "self"
+        }
+      ],
+      "brand": "OCTOPUS_ENERGY"
+    },
+    {
+      "code": "GO-3H-0330",
+      "direction": "IMPORT",
+      "full_name": "Octopus Go Faster (3H from 0330) December 2019 v1",
+      "display_name": "Octopus Go Faster",
+      "description": "Octopus Go Faster (3H from 0330)",
+      "is_variable": true,
+      "is_green": true,
+      "is_tracker": false,
+      "is_prepay": false,
+      "is_business": false,
+      "is_restricted": false,
+      "term": 12,
+      "available_from": "2019-12-10T00:00:00Z",
+      "available_to": null,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/GO-3H-0330/",
+          "method": "GET",
+          "rel": "self"
+        }
+      ],
+      "brand": "OCTOPUS_ENERGY"
+    },
+    {
+      "code": "GO-3H-2030",
+      "direction": "IMPORT",
+      "full_name": "Octopus Go Faster (3H from 2030) December 2019 v1",
+      "display_name": "Octopus Go Faster",
+      "description": "Octopus Go Faster (3H from 2030)",
+      "is_variable": true,
+      "is_green": true,
+      "is_tracker": false,
+      "is_prepay": false,
+      "is_business": false,
+      "is_restricted": false,
+      "term": 12,
+      "available_from": "2019-12-10T00:00:00Z",
+      "available_to": null,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/GO-3H-2030/",
+          "method": "GET",
+          "rel": "self"
+        }
+      ],
+      "brand": "OCTOPUS_ENERGY"
+    },
+    {
+      "code": "GO-3H-2130",
+      "direction": "IMPORT",
+      "full_name": "Octopus Go Faster (3H from 2130) December 2019 v1",
+      "display_name": "Octopus Go Faster",
+      "description": "Octopus Go Faster (3H from 2130)",
+      "is_variable": true,
+      "is_green": true,
+      "is_tracker": false,
+      "is_prepay": false,
+      "is_business": false,
+      "is_restricted": false,
+      "term": 12,
+      "available_from": "2019-12-10T00:00:00Z",
+      "available_to": null,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/GO-3H-2130/",
+          "method": "GET",
+          "rel": "self"
+        }
+      ],
+      "brand": "OCTOPUS_ENERGY"
+    },
+    {
+      "code": "GO-3H-2230",
+      "direction": "IMPORT",
+      "full_name": "Octopus Go Faster (3H from 2230) December 2019 v1",
+      "display_name": "Octopus Go Faster",
+      "description": "Octopus Go Faster (3H from 2230)",
+      "is_variable": true,
+      "is_green": true,
+      "is_tracker": false,
+      "is_prepay": false,
+      "is_business": false,
+      "is_restricted": false,
+      "term": 12,
+      "available_from": "2019-12-10T00:00:00Z",
+      "available_to": null,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/GO-3H-2230/",
+          "method": "GET",
+          "rel": "self"
+        }
+      ],
+      "brand": "OCTOPUS_ENERGY"
+    },
+    {
+      "code": "GO-3H-2330",
+      "direction": "IMPORT",
+      "full_name": "Octopus Go Faster (3H from 2330) December 2019 v1",
+      "display_name": "Octopus Go Faster",
+      "description": "Octopus Go Faster (3H from 2330)",
+      "is_variable": true,
+      "is_green": true,
+      "is_tracker": false,
+      "is_prepay": false,
+      "is_business": false,
+      "is_restricted": false,
+      "term": 12,
+      "available_from": "2019-12-10T00:00:00Z",
+      "available_to": null,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/GO-3H-2330/",
+          "method": "GET",
+          "rel": "self"
+        }
+      ],
+      "brand": "OCTOPUS_ENERGY"
+    },
+    {
+      "code": "GO-4H-0030",
+      "direction": "IMPORT",
+      "full_name": "Octopus Go Faster (4H from 0030) December 2019 v1",
+      "display_name": "Octopus Go Faster",
+      "description": "Octopus Go Faster (4H from 0030)",
+      "is_variable": true,
+      "is_green": true,
+      "is_tracker": false,
+      "is_prepay": false,
+      "is_business": false,
+      "is_restricted": false,
+      "term": 12,
+      "available_from": "2019-12-10T00:00:00Z",
+      "available_to": null,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/GO-4H-0030/",
+          "method": "GET",
+          "rel": "self"
+        }
+      ],
+      "brand": "OCTOPUS_ENERGY"
+    },
+    {
+      "code": "GO-4H-0130",
+      "direction": "IMPORT",
+      "full_name": "Octopus Go Faster (4H from 0130) December 2019 v1",
+      "display_name": "Octopus Go Faster",
+      "description": "Octopus Go Faster (4H from 0130)",
+      "is_variable": true,
+      "is_green": true,
+      "is_tracker": false,
+      "is_prepay": false,
+      "is_business": false,
+      "is_restricted": false,
+      "term": 12,
+      "available_from": "2019-12-10T00:00:00Z",
+      "available_to": null,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/GO-4H-0130/",
+          "method": "GET",
+          "rel": "self"
+        }
+      ],
+      "brand": "OCTOPUS_ENERGY"
+    },
+    {
+      "code": "GO-4H-0230",
+      "direction": "IMPORT",
+      "full_name": "Octopus Go Faster (4H from 0230) December 2019 v1",
+      "display_name": "Octopus Go Faster",
+      "description": "Octopus Go Faster (4H from 0230)",
+      "is_variable": true,
+      "is_green": true,
+      "is_tracker": false,
+      "is_prepay": false,
+      "is_business": false,
+      "is_restricted": false,
+      "term": 12,
+      "available_from": "2019-12-10T00:00:00Z",
+      "available_to": null,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/GO-4H-0230/",
+          "method": "GET",
+          "rel": "self"
+        }
+      ],
+      "brand": "OCTOPUS_ENERGY"
+    },
+    {
+      "code": "GO-4H-2030",
+      "direction": "IMPORT",
+      "full_name": "Octopus Go Faster (4H from 2030) December 2019 v1",
+      "display_name": "Octopus Go Faster",
+      "description": "Octopus Go Faster (4H from 2030)",
+      "is_variable": true,
+      "is_green": true,
+      "is_tracker": false,
+      "is_prepay": false,
+      "is_business": false,
+      "is_restricted": false,
+      "term": 12,
+      "available_from": "2019-12-10T00:00:00Z",
+      "available_to": null,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/GO-4H-2030/",
+          "method": "GET",
+          "rel": "self"
+        }
+      ],
+      "brand": "OCTOPUS_ENERGY"
+    },
+    {
+      "code": "GO-4H-2130",
+      "direction": "IMPORT",
+      "full_name": "Octopus Go Faster (4H from 2130) December 2019 v1",
+      "display_name": "Octopus Go Faster",
+      "description": "Octopus Go Faster (4H from 2130)",
+      "is_variable": true,
+      "is_green": true,
+      "is_tracker": false,
+      "is_prepay": false,
+      "is_business": false,
+      "is_restricted": false,
+      "term": 12,
+      "available_from": "2019-12-10T00:00:00Z",
+      "available_to": null,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/GO-4H-2130/",
+          "method": "GET",
+          "rel": "self"
+        }
+      ],
+      "brand": "OCTOPUS_ENERGY"
+    },
+    {
+      "code": "GO-4H-2230",
+      "direction": "IMPORT",
+      "full_name": "Octopus Go Faster (4H from 2230) December 2019 v1",
+      "display_name": "Octopus Go Faster",
+      "description": "Octopus Go Faster (4H from 2230)",
+      "is_variable": true,
+      "is_green": true,
+      "is_tracker": false,
+      "is_prepay": false,
+      "is_business": false,
+      "is_restricted": false,
+      "term": 12,
+      "available_from": "2019-12-10T00:00:00Z",
+      "available_to": null,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/GO-4H-2230/",
+          "method": "GET",
+          "rel": "self"
+        }
+      ],
+      "brand": "OCTOPUS_ENERGY"
+    },
+    {
+      "code": "GO-4H-2330",
+      "direction": "IMPORT",
+      "full_name": "Octopus Go Faster (4H from 2330) December 2019 v1",
+      "display_name": "Octopus Go Faster",
+      "description": "Octopus Go Faster (4H from 2330)",
+      "is_variable": true,
+      "is_green": true,
+      "is_tracker": false,
+      "is_prepay": false,
+      "is_business": false,
+      "is_restricted": false,
+      "term": 12,
+      "available_from": "2019-12-10T00:00:00Z",
+      "available_to": null,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/GO-4H-2330/",
+          "method": "GET",
+          "rel": "self"
+        }
+      ],
+      "brand": "OCTOPUS_ENERGY"
+    },
+    {
+      "code": "GO-5H-0030",
+      "direction": "IMPORT",
+      "full_name": "Octopus Go Faster (5H from 0030) December 2019 v1",
+      "display_name": "Octopus Go Faster",
+      "description": "Octopus Go Faster (5H from 0030)",
+      "is_variable": true,
+      "is_green": true,
+      "is_tracker": false,
+      "is_prepay": false,
+      "is_business": false,
+      "is_restricted": false,
+      "term": 12,
+      "available_from": "2019-12-10T00:00:00Z",
+      "available_to": null,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/GO-5H-0030/",
+          "method": "GET",
+          "rel": "self"
+        }
+      ],
+      "brand": "OCTOPUS_ENERGY"
+    },
+    {
+      "code": "GO-5H-0130",
+      "direction": "IMPORT",
+      "full_name": "Octopus Go Faster (5H from 0130) December 2019 v1",
+      "display_name": "Octopus Go Faster",
+      "description": "Octopus Go Faster (5H from 0130)",
+      "is_variable": true,
+      "is_green": true,
+      "is_tracker": false,
+      "is_prepay": false,
+      "is_business": false,
+      "is_restricted": false,
+      "term": 12,
+      "available_from": "2019-12-10T00:00:00Z",
+      "available_to": null,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/GO-5H-0130/",
+          "method": "GET",
+          "rel": "self"
+        }
+      ],
+      "brand": "OCTOPUS_ENERGY"
+    },
+    {
+      "code": "GO-5H-2030",
+      "direction": "IMPORT",
+      "full_name": "Octopus Go Faster (5H from 2030) December 2019 v1",
+      "display_name": "Octopus Go Faster",
+      "description": "Octopus Go Faster (5H from 2030)",
+      "is_variable": true,
+      "is_green": true,
+      "is_tracker": false,
+      "is_prepay": false,
+      "is_business": false,
+      "is_restricted": false,
+      "term": 12,
+      "available_from": "2019-12-10T00:00:00Z",
+      "available_to": null,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/GO-5H-2030/",
+          "method": "GET",
+          "rel": "self"
+        }
+      ],
+      "brand": "OCTOPUS_ENERGY"
+    },
+    {
+      "code": "GO-5H-2130",
+      "direction": "IMPORT",
+      "full_name": "Octopus Go Faster (5H from 2130) December 2019 v1",
+      "display_name": "Octopus Go Faster",
+      "description": "Octopus Go Faster (5H from 2130)",
+      "is_variable": true,
+      "is_green": true,
+      "is_tracker": false,
+      "is_prepay": false,
+      "is_business": false,
+      "is_restricted": false,
+      "term": 12,
+      "available_from": "2019-12-10T00:00:00Z",
+      "available_to": null,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/GO-5H-2130/",
+          "method": "GET",
+          "rel": "self"
+        }
+      ],
+      "brand": "OCTOPUS_ENERGY"
+    },
+    {
+      "code": "GO-5H-2230",
+      "direction": "IMPORT",
+      "full_name": "Octopus Go Faster (5H from 2230) December 2019 v1",
+      "display_name": "Octopus Go Faster",
+      "description": "Octopus Go Faster (5H from 2230)",
+      "is_variable": true,
+      "is_green": true,
+      "is_tracker": false,
+      "is_prepay": false,
+      "is_business": false,
+      "is_restricted": false,
+      "term": 12,
+      "available_from": "2019-12-10T00:00:00Z",
+      "available_to": null,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/GO-5H-2230/",
+          "method": "GET",
+          "rel": "self"
+        }
+      ],
+      "brand": "OCTOPUS_ENERGY"
+    },
+    {
+      "code": "GO-5H-2330",
+      "direction": "IMPORT",
+      "full_name": "Octopus Go Faster (5H from 2330) December 2019 v1",
+      "display_name": "Octopus Go Faster",
+      "description": "Octopus Go Faster (5H from 2330)",
+      "is_variable": true,
+      "is_green": true,
+      "is_tracker": false,
+      "is_prepay": false,
+      "is_business": false,
+      "is_restricted": false,
+      "term": 12,
+      "available_from": "2019-12-10T00:00:00Z",
+      "available_to": null,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/GO-5H-2330/",
+          "method": "GET",
+          "rel": "self"
+        }
+      ],
+      "brand": "OCTOPUS_ENERGY"
+    },
+    {
+      "code": "LP-CN-FIX-12M-20-09-24",
+      "direction": "IMPORT",
+      "full_name": "my london carbon neutral plan 12m fixed september 2020 v2",
+      "display_name": "my london carbon neutral plan",
+      "description": "London Power's great value, greenest plan. 100% renewable electricity plus carbon offsetting if your household uses gas. This plan fixes your unit rates and standing charges for 12 months. There are no exit fees, so if you change your mind, you're in control.",
+      "is_variable": false,
+      "is_green": true,
+      "is_tracker": false,
+      "is_prepay": false,
+      "is_business": false,
+      "is_restricted": false,
+      "term": 12,
+      "available_from": "2020-09-24T00:00:00+01:00",
+      "available_to": null,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/LP-CN-FIX-12M-20-09-24/",
+          "method": "GET",
+          "rel": "self"
+        }
+      ],
+      "brand": "LONDON_POWER"
+    },
+    {
+      "code": "LP-CN-FIX-24M-20-09-24",
+      "direction": "IMPORT",
+      "full_name": "my london carbon neutral 24 month plan september 2020 v1",
+      "display_name": "my london carbon neutral 24 month plan",
+      "description": "London Power's great value, greenest plan. 100% renewable electricity plus carbon offsetting if your household uses gas. This plan fixes your unit rates and standing charges for 24 months. There are no exit fees, so if you change your mind, you're in control.",
+      "is_variable": false,
+      "is_green": true,
+      "is_tracker": false,
+      "is_prepay": false,
+      "is_business": false,
+      "is_restricted": false,
+      "term": 24,
+      "available_from": "2020-09-24T00:00:00+01:00",
+      "available_to": null,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/LP-CN-FIX-24M-20-09-24/",
+          "method": "GET",
+          "rel": "self"
+        }
+      ],
+      "brand": "LONDON_POWER"
+    },
+    {
+      "code": "LP-CNT-FIX-12M-20-09-24",
+      "direction": "IMPORT",
+      "full_name": "my london tree plan 12m fixed september 2020 v1",
+      "display_name": "my london tree plan",
+      "description": "London Power's great value, greenest plan. 100% renewable electricity, carbon offsetting if your household uses gas AND you'll be helping your local environment as we'll plant trees on your behalf in London. This plan fixes your unit rates and standing charges for 12 months. There are no exit fees, so if you change your mind, you're in control.",
+      "is_variable": false,
+      "is_green": true,
+      "is_tracker": false,
+      "is_prepay": false,
+      "is_business": false,
+      "is_restricted": false,
+      "term": 12,
+      "available_from": "2020-09-24T00:00:00+01:00",
+      "available_to": null,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/LP-CNT-FIX-12M-20-09-24/",
+          "method": "GET",
+          "rel": "self"
+        }
+      ],
+      "brand": "LONDON_POWER"
+    },
+    {
+      "code": "LP-CNT-FIX-24M-20-09-24",
+      "direction": "IMPORT",
+      "full_name": "my london tree plan 24 month september 2020 v1",
+      "display_name": "my london tree plan 24 month",
+      "description": "London Power's great value, greenest plan. 100% renewable electricity, carbon offsetting if your household uses gas AND you'll be helping your local environment as we'll plant trees on your behalf in London. This plan fixes your unit rates and standing charges for 24 months. There are no exit fees, so if you change your mind, you're in control.",
+      "is_variable": false,
+      "is_green": true,
+      "is_tracker": false,
+      "is_prepay": false,
+      "is_business": false,
+      "is_restricted": false,
+      "term": 24,
+      "available_from": "2020-09-24T00:00:00+01:00",
+      "available_to": null,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/LP-CNT-FIX-24M-20-09-24/",
+          "method": "GET",
+          "rel": "self"
+        }
+      ],
+      "brand": "LONDON_POWER"
+    },
+    {
+      "code": "OUTGOING-FIX-12M-19-05-13",
+      "direction": "EXPORT",
+      "full_name": "Outgoing Octopus 12M Fixed May 2019",
+      "display_name": "Outgoing Octopus 12M Fixed",
+      "description": "Outgoing Octopus flat rate pays you for all exported energy at a flat rate.",
+      "is_variable": false,
+      "is_green": true,
+      "is_tracker": false,
+      "is_prepay": false,
+      "is_business": false,
+      "is_restricted": false,
+      "term": 12,
+      "available_from": "2019-05-16T00:00:00+01:00",
+      "available_to": null,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/OUTGOING-FIX-12M-19-05-13/",
+          "method": "GET",
+          "rel": "self"
+        }
+      ],
+      "brand": "OCTOPUS_ENERGY"
+    },
+    {
+      "code": "OUTGOING-SEG-FIX-12M-20-07-07",
+      "direction": "EXPORT",
+      "full_name": "Octopus Outgoing Smart Export Guarantee July 2020 v1",
+      "display_name": "Octopus Outgoing Smart Export Guarantee",
+      "description": "Outgoing SEG is our Smart Export Guarantee compliant export tariff",
+      "is_variable": false,
+      "is_green": true,
+      "is_tracker": false,
+      "is_prepay": false,
+      "is_business": false,
+      "is_restricted": false,
+      "term": 12,
+      "available_from": "2020-07-14T00:00:00+01:00",
+      "available_to": null,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/OUTGOING-SEG-FIX-12M-20-07-07/",
+          "method": "GET",
+          "rel": "self"
+        }
+      ],
+      "brand": "OCTOPUS_ENERGY"
+    },
+    {
+      "code": "SUPER-GREEN-12M-20-09-22",
+      "direction": "IMPORT",
+      "full_name": "Super Green Octopus 12M Fixed September 2020 v2",
+      "display_name": "Super Green Octopus",
+      "description": "This 12 month fixed tariff is the very greenest you can be with Octopus! The electricity you use is 100% matched by renewable sources, and any gas you use is fully carbon offset through our partner Renewable World. Like all our tariffs, Super Green Octopus has no exit fees.",
+      "is_variable": false,
+      "is_green": true,
+      "is_tracker": false,
+      "is_prepay": false,
+      "is_business": false,
+      "is_restricted": false,
+      "term": 12,
+      "available_from": "2020-09-22T00:00:00+01:00",
+      "available_to": null,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/SUPER-GREEN-12M-20-09-22/",
+          "method": "GET",
+          "rel": "self"
+        }
+      ],
+      "brand": "OCTOPUS_ENERGY"
+    }
+  ]
+}

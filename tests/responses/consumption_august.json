@@ -1,0 +1,507 @@
+{
+  "count": 1058,
+  "next": "https://api.octopus.energy/v1/electricity-meter-points/2000024512368/meters/-------------/consumption/?page=2&period_from=2020-08-03T00%3A00%3A00Z&period_to=2020-09-03T00%3A00%3A00Z",
+  "previous": null,
+  "results": [
+    {
+      "consumption": 0.263,
+      "interval_start": "2020-09-03T01:00:00+01:00",
+      "interval_end": "2020-09-03T01:30:00+01:00"
+    },
+    {
+      "consumption": 0.272,
+      "interval_start": "2020-09-03T00:30:00+01:00",
+      "interval_end": "2020-09-03T01:00:00+01:00"
+    },
+    {
+      "consumption": 0.286,
+      "interval_start": "2020-09-03T00:00:00+01:00",
+      "interval_end": "2020-09-03T00:30:00+01:00"
+    },
+    {
+      "consumption": 0.318,
+      "interval_start": "2020-09-02T23:30:00+01:00",
+      "interval_end": "2020-09-03T00:00:00+01:00"
+    },
+    {
+      "consumption": 0.346,
+      "interval_start": "2020-09-02T23:00:00+01:00",
+      "interval_end": "2020-09-02T23:30:00+01:00"
+    },
+    {
+      "consumption": 0.624,
+      "interval_start": "2020-09-02T22:30:00+01:00",
+      "interval_end": "2020-09-02T23:00:00+01:00"
+    },
+    {
+      "consumption": 0.51,
+      "interval_start": "2020-09-02T22:00:00+01:00",
+      "interval_end": "2020-09-02T22:30:00+01:00"
+    },
+    {
+      "consumption": 0.507,
+      "interval_start": "2020-09-02T21:30:00+01:00",
+      "interval_end": "2020-09-02T22:00:00+01:00"
+    },
+    {
+      "consumption": 0.612,
+      "interval_start": "2020-09-02T21:00:00+01:00",
+      "interval_end": "2020-09-02T21:30:00+01:00"
+    },
+    {
+      "consumption": 0.517,
+      "interval_start": "2020-09-02T20:30:00+01:00",
+      "interval_end": "2020-09-02T21:00:00+01:00"
+    },
+    {
+      "consumption": 0.455,
+      "interval_start": "2020-09-02T20:00:00+01:00",
+      "interval_end": "2020-09-02T20:30:00+01:00"
+    },
+    {
+      "consumption": 0.554,
+      "interval_start": "2020-09-02T19:30:00+01:00",
+      "interval_end": "2020-09-02T20:00:00+01:00"
+    },
+    {
+      "consumption": 0.474,
+      "interval_start": "2020-09-02T19:00:00+01:00",
+      "interval_end": "2020-09-02T19:30:00+01:00"
+    },
+    {
+      "consumption": 0.501,
+      "interval_start": "2020-09-02T18:30:00+01:00",
+      "interval_end": "2020-09-02T19:00:00+01:00"
+    },
+    {
+      "consumption": 0.463,
+      "interval_start": "2020-09-02T18:00:00+01:00",
+      "interval_end": "2020-09-02T18:30:00+01:00"
+    },
+    {
+      "consumption": 0.412,
+      "interval_start": "2020-09-02T17:30:00+01:00",
+      "interval_end": "2020-09-02T18:00:00+01:00"
+    },
+    {
+      "consumption": 0.401,
+      "interval_start": "2020-09-02T17:00:00+01:00",
+      "interval_end": "2020-09-02T17:30:00+01:00"
+    },
+    {
+      "consumption": 0.41,
+      "interval_start": "2020-09-02T16:30:00+01:00",
+      "interval_end": "2020-09-02T17:00:00+01:00"
+    },
+    {
+      "consumption": 0.409,
+      "interval_start": "2020-09-02T16:00:00+01:00",
+      "interval_end": "2020-09-02T16:30:00+01:00"
+    },
+    {
+      "consumption": 0.495,
+      "interval_start": "2020-09-02T15:30:00+01:00",
+      "interval_end": "2020-09-02T16:00:00+01:00"
+    },
+    {
+      "consumption": 0.498,
+      "interval_start": "2020-09-02T15:00:00+01:00",
+      "interval_end": "2020-09-02T15:30:00+01:00"
+    },
+    {
+      "consumption": 0.45,
+      "interval_start": "2020-09-02T14:30:00+01:00",
+      "interval_end": "2020-09-02T15:00:00+01:00"
+    },
+    {
+      "consumption": 0.451,
+      "interval_start": "2020-09-02T14:00:00+01:00",
+      "interval_end": "2020-09-02T14:30:00+01:00"
+    },
+    {
+      "consumption": 0.388,
+      "interval_start": "2020-09-02T13:30:00+01:00",
+      "interval_end": "2020-09-02T14:00:00+01:00"
+    },
+    {
+      "consumption": 0.501,
+      "interval_start": "2020-09-02T13:00:00+01:00",
+      "interval_end": "2020-09-02T13:30:00+01:00"
+    },
+    {
+      "consumption": 0.398,
+      "interval_start": "2020-09-02T12:30:00+01:00",
+      "interval_end": "2020-09-02T13:00:00+01:00"
+    },
+    {
+      "consumption": 0.389,
+      "interval_start": "2020-09-02T12:00:00+01:00",
+      "interval_end": "2020-09-02T12:30:00+01:00"
+    },
+    {
+      "consumption": 0.46,
+      "interval_start": "2020-09-02T11:30:00+01:00",
+      "interval_end": "2020-09-02T12:00:00+01:00"
+    },
+    {
+      "consumption": 0.39,
+      "interval_start": "2020-09-02T11:00:00+01:00",
+      "interval_end": "2020-09-02T11:30:00+01:00"
+    },
+    {
+      "consumption": 0.398,
+      "interval_start": "2020-09-02T10:30:00+01:00",
+      "interval_end": "2020-09-02T11:00:00+01:00"
+    },
+    {
+      "consumption": 0.418,
+      "interval_start": "2020-09-02T10:00:00+01:00",
+      "interval_end": "2020-09-02T10:30:00+01:00"
+    },
+    {
+      "consumption": 0.482,
+      "interval_start": "2020-09-02T09:30:00+01:00",
+      "interval_end": "2020-09-02T10:00:00+01:00"
+    },
+    {
+      "consumption": 0.395,
+      "interval_start": "2020-09-02T09:00:00+01:00",
+      "interval_end": "2020-09-02T09:30:00+01:00"
+    },
+    {
+      "consumption": 0.406,
+      "interval_start": "2020-09-02T08:30:00+01:00",
+      "interval_end": "2020-09-02T09:00:00+01:00"
+    },
+    {
+      "consumption": 0.515,
+      "interval_start": "2020-09-02T08:00:00+01:00",
+      "interval_end": "2020-09-02T08:30:00+01:00"
+    },
+    {
+      "consumption": 0.477,
+      "interval_start": "2020-09-02T07:30:00+01:00",
+      "interval_end": "2020-09-02T08:00:00+01:00"
+    },
+    {
+      "consumption": 0.87,
+      "interval_start": "2020-09-02T07:00:00+01:00",
+      "interval_end": "2020-09-02T07:30:00+01:00"
+    },
+    {
+      "consumption": 0.318,
+      "interval_start": "2020-09-02T06:30:00+01:00",
+      "interval_end": "2020-09-02T07:00:00+01:00"
+    },
+    {
+      "consumption": 0.264,
+      "interval_start": "2020-09-02T06:00:00+01:00",
+      "interval_end": "2020-09-02T06:30:00+01:00"
+    },
+    {
+      "consumption": 0.264,
+      "interval_start": "2020-09-02T05:30:00+01:00",
+      "interval_end": "2020-09-02T06:00:00+01:00"
+    },
+    {
+      "consumption": 0.251,
+      "interval_start": "2020-09-02T05:00:00+01:00",
+      "interval_end": "2020-09-02T05:30:00+01:00"
+    },
+    {
+      "consumption": 0.251,
+      "interval_start": "2020-09-02T04:30:00+01:00",
+      "interval_end": "2020-09-02T05:00:00+01:00"
+    },
+    {
+      "consumption": 0.261,
+      "interval_start": "2020-09-02T04:00:00+01:00",
+      "interval_end": "2020-09-02T04:30:00+01:00"
+    },
+    {
+      "consumption": 0.248,
+      "interval_start": "2020-09-02T03:30:00+01:00",
+      "interval_end": "2020-09-02T04:00:00+01:00"
+    },
+    {
+      "consumption": 0.255,
+      "interval_start": "2020-09-02T03:00:00+01:00",
+      "interval_end": "2020-09-02T03:30:00+01:00"
+    },
+    {
+      "consumption": 0.27,
+      "interval_start": "2020-09-02T02:30:00+01:00",
+      "interval_end": "2020-09-02T03:00:00+01:00"
+    },
+    {
+      "consumption": 0.262,
+      "interval_start": "2020-09-02T02:00:00+01:00",
+      "interval_end": "2020-09-02T02:30:00+01:00"
+    },
+    {
+      "consumption": 0.274,
+      "interval_start": "2020-09-02T01:30:00+01:00",
+      "interval_end": "2020-09-02T02:00:00+01:00"
+    },
+    {
+      "consumption": 0.276,
+      "interval_start": "2020-09-02T01:00:00+01:00",
+      "interval_end": "2020-09-02T01:30:00+01:00"
+    },
+    {
+      "consumption": 0.264,
+      "interval_start": "2020-09-02T00:30:00+01:00",
+      "interval_end": "2020-09-02T01:00:00+01:00"
+    },
+    {
+      "consumption": 0.3,
+      "interval_start": "2020-09-02T00:00:00+01:00",
+      "interval_end": "2020-09-02T00:30:00+01:00"
+    },
+    {
+      "consumption": 0.333,
+      "interval_start": "2020-09-01T23:30:00+01:00",
+      "interval_end": "2020-09-02T00:00:00+01:00"
+    },
+    {
+      "consumption": 0.397,
+      "interval_start": "2020-09-01T23:00:00+01:00",
+      "interval_end": "2020-09-01T23:30:00+01:00"
+    },
+    {
+      "consumption": 0.51,
+      "interval_start": "2020-09-01T22:30:00+01:00",
+      "interval_end": "2020-09-01T23:00:00+01:00"
+    },
+    {
+      "consumption": 0.451,
+      "interval_start": "2020-09-01T22:00:00+01:00",
+      "interval_end": "2020-09-01T22:30:00+01:00"
+    },
+    {
+      "consumption": 0.425,
+      "interval_start": "2020-09-01T21:30:00+01:00",
+      "interval_end": "2020-09-01T22:00:00+01:00"
+    },
+    {
+      "consumption": 0.486,
+      "interval_start": "2020-09-01T21:00:00+01:00",
+      "interval_end": "2020-09-01T21:30:00+01:00"
+    },
+    {
+      "consumption": 0.44,
+      "interval_start": "2020-09-01T20:30:00+01:00",
+      "interval_end": "2020-09-01T21:00:00+01:00"
+    },
+    {
+      "consumption": 0.414,
+      "interval_start": "2020-09-01T20:00:00+01:00",
+      "interval_end": "2020-09-01T20:30:00+01:00"
+    },
+    {
+      "consumption": 0.599,
+      "interval_start": "2020-09-01T19:30:00+01:00",
+      "interval_end": "2020-09-01T20:00:00+01:00"
+    },
+    {
+      "consumption": 0.498,
+      "interval_start": "2020-09-01T19:00:00+01:00",
+      "interval_end": "2020-09-01T19:30:00+01:00"
+    },
+    {
+      "consumption": 0.479,
+      "interval_start": "2020-09-01T18:30:00+01:00",
+      "interval_end": "2020-09-01T19:00:00+01:00"
+    },
+    {
+      "consumption": 0.417,
+      "interval_start": "2020-09-01T18:00:00+01:00",
+      "interval_end": "2020-09-01T18:30:00+01:00"
+    },
+    {
+      "consumption": 0.457,
+      "interval_start": "2020-09-01T17:30:00+01:00",
+      "interval_end": "2020-09-01T18:00:00+01:00"
+    },
+    {
+      "consumption": 1.362,
+      "interval_start": "2020-09-01T17:00:00+01:00",
+      "interval_end": "2020-09-01T17:30:00+01:00"
+    },
+    {
+      "consumption": 0.373,
+      "interval_start": "2020-09-01T16:30:00+01:00",
+      "interval_end": "2020-09-01T17:00:00+01:00"
+    },
+    {
+      "consumption": 0.369,
+      "interval_start": "2020-09-01T16:00:00+01:00",
+      "interval_end": "2020-09-01T16:30:00+01:00"
+    },
+    {
+      "consumption": 0.47,
+      "interval_start": "2020-09-01T15:30:00+01:00",
+      "interval_end": "2020-09-01T16:00:00+01:00"
+    },
+    {
+      "consumption": 0.397,
+      "interval_start": "2020-09-01T15:00:00+01:00",
+      "interval_end": "2020-09-01T15:30:00+01:00"
+    },
+    {
+      "consumption": 0.359,
+      "interval_start": "2020-09-01T14:30:00+01:00",
+      "interval_end": "2020-09-01T15:00:00+01:00"
+    },
+    {
+      "consumption": 0.364,
+      "interval_start": "2020-09-01T14:00:00+01:00",
+      "interval_end": "2020-09-01T14:30:00+01:00"
+    },
+    {
+      "consumption": 0.366,
+      "interval_start": "2020-09-01T13:30:00+01:00",
+      "interval_end": "2020-09-01T14:00:00+01:00"
+    },
+    {
+      "consumption": 0.434,
+      "interval_start": "2020-09-01T13:00:00+01:00",
+      "interval_end": "2020-09-01T13:30:00+01:00"
+    },
+    {
+      "consumption": 0.407,
+      "interval_start": "2020-09-01T12:30:00+01:00",
+      "interval_end": "2020-09-01T13:00:00+01:00"
+    },
+    {
+      "consumption": 0.363,
+      "interval_start": "2020-09-01T12:00:00+01:00",
+      "interval_end": "2020-09-01T12:30:00+01:00"
+    },
+    {
+      "consumption": 0.475,
+      "interval_start": "2020-09-01T11:30:00+01:00",
+      "interval_end": "2020-09-01T12:00:00+01:00"
+    },
+    {
+      "consumption": 0.354,
+      "interval_start": "2020-09-01T11:00:00+01:00",
+      "interval_end": "2020-09-01T11:30:00+01:00"
+    },
+    {
+      "consumption": 0.409,
+      "interval_start": "2020-09-01T10:30:00+01:00",
+      "interval_end": "2020-09-01T11:00:00+01:00"
+    },
+    {
+      "consumption": 0.412,
+      "interval_start": "2020-09-01T10:00:00+01:00",
+      "interval_end": "2020-09-01T10:30:00+01:00"
+    },
+    {
+      "consumption": 0.457,
+      "interval_start": "2020-09-01T09:30:00+01:00",
+      "interval_end": "2020-09-01T10:00:00+01:00"
+    },
+    {
+      "consumption": 0.923,
+      "interval_start": "2020-09-01T09:00:00+01:00",
+      "interval_end": "2020-09-01T09:30:00+01:00"
+    },
+    {
+      "consumption": 0.542,
+      "interval_start": "2020-09-01T08:30:00+01:00",
+      "interval_end": "2020-09-01T09:00:00+01:00"
+    },
+    {
+      "consumption": 1.032,
+      "interval_start": "2020-09-01T08:00:00+01:00",
+      "interval_end": "2020-09-01T08:30:00+01:00"
+    },
+    {
+      "consumption": 0.426,
+      "interval_start": "2020-09-01T07:30:00+01:00",
+      "interval_end": "2020-09-01T08:00:00+01:00"
+    },
+    {
+      "consumption": 0.356,
+      "interval_start": "2020-09-01T07:00:00+01:00",
+      "interval_end": "2020-09-01T07:30:00+01:00"
+    },
+    {
+      "consumption": 0.256,
+      "interval_start": "2020-09-01T06:30:00+01:00",
+      "interval_end": "2020-09-01T07:00:00+01:00"
+    },
+    {
+      "consumption": 0.251,
+      "interval_start": "2020-09-01T06:00:00+01:00",
+      "interval_end": "2020-09-01T06:30:00+01:00"
+    },
+    {
+      "consumption": 0.227,
+      "interval_start": "2020-09-01T05:30:00+01:00",
+      "interval_end": "2020-09-01T06:00:00+01:00"
+    },
+    {
+      "consumption": 0.239,
+      "interval_start": "2020-09-01T05:00:00+01:00",
+      "interval_end": "2020-09-01T05:30:00+01:00"
+    },
+    {
+      "consumption": 0.238,
+      "interval_start": "2020-09-01T04:30:00+01:00",
+      "interval_end": "2020-09-01T05:00:00+01:00"
+    },
+    {
+      "consumption": 0.223,
+      "interval_start": "2020-09-01T04:00:00+01:00",
+      "interval_end": "2020-09-01T04:30:00+01:00"
+    },
+    {
+      "consumption": 0.239,
+      "interval_start": "2020-09-01T03:30:00+01:00",
+      "interval_end": "2020-09-01T04:00:00+01:00"
+    },
+    {
+      "consumption": 0.239,
+      "interval_start": "2020-09-01T03:00:00+01:00",
+      "interval_end": "2020-09-01T03:30:00+01:00"
+    },
+    {
+      "consumption": 0.228,
+      "interval_start": "2020-09-01T02:30:00+01:00",
+      "interval_end": "2020-09-01T03:00:00+01:00"
+    },
+    {
+      "consumption": 0.252,
+      "interval_start": "2020-09-01T02:00:00+01:00",
+      "interval_end": "2020-09-01T02:30:00+01:00"
+    },
+    {
+      "consumption": 0.256,
+      "interval_start": "2020-09-01T01:30:00+01:00",
+      "interval_end": "2020-09-01T02:00:00+01:00"
+    },
+    {
+      "consumption": 0.243,
+      "interval_start": "2020-09-01T01:00:00+01:00",
+      "interval_end": "2020-09-01T01:30:00+01:00"
+    },
+    {
+      "consumption": 0.254,
+      "interval_start": "2020-09-01T00:30:00+01:00",
+      "interval_end": "2020-09-01T01:00:00+01:00"
+    },
+    {
+      "consumption": 0.284,
+      "interval_start": "2020-09-01T00:00:00+01:00",
+      "interval_end": "2020-09-01T00:30:00+01:00"
+    },
+    {
+      "consumption": 0.329,
+      "interval_start": "2020-08-31T23:30:00+01:00",
+      "interval_end": "2020-09-01T00:00:00+01:00"
+    }
+  ]
+}

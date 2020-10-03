@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 #
-#  __init__.py
+#  consumption.py
 """
-Python interface to the Octopus Energy API.
+Class to represent consumption data.
 """
 #
 #  Copyright © 2020 Dominic Davis-Foster <dominic@davis-foster.co.uk>
@@ -26,8 +26,33 @@ Python interface to the Octopus Energy API.
 #  OR OTHER DEALINGS IN THE SOFTWARE.
 #
 
-__author__: str = "Dominic Davis-Foster"
-__copyright__: str = "2020 Dominic Davis-Foster"
-__license__: str = "MIT License"
-__version__: str = "0.0.0"
-__email__: str = "dominic@davis-foster.co.uk"
+# stdlib
+from datetime import datetime
+
+# 3rd party
+import attr
+from attr_utils.pprinter import pretty_repr
+from attr_utils.serialise import serde
+
+# this package
+from octo_api.utils import from_iso_zulu
+
+__all__ = ["Consumption"]
+
+
+@serde
+@pretty_repr
+@attr.s(slots=True, frozen=True)
+class Consumption:
+	"""
+	Represents the consumption for a given period of time.
+	"""
+
+	#: The consumption
+	consumption: float = attr.ib()
+
+	#: The start of the time period.
+	interval_start: datetime = attr.ib(converter=from_iso_zulu)
+
+	#: The end of the time period.
+	interval_end: datetime = attr.ib(converter=from_iso_zulu)

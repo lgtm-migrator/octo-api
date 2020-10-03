@@ -34,27 +34,24 @@ language = 'en'
 package_root = "octo_api"
 
 extensions = [
-	'autodocsumm',
-	'notfound.extension',
-	'seed_intersphinx_mapping',
-	'sphinx-prompt',
-	'sphinx.ext.autodoc',
-	'sphinx.ext.autosectionlabel',
-	'sphinx.ext.autosummary',
+	'sphinx_toolbox',
+	'sphinx_toolbox.more_autodoc',
+	'sphinx_toolbox.more_autosummary',
+	'sphinx_toolbox.tweaks.param_dash',
 	'sphinx.ext.intersphinx',
 	'sphinx.ext.mathjax',
-	'sphinx.ext.todo',
-	'sphinx.ext.viewcode',
-	'sphinx_autodoc_typehints',
-	'sphinx_copybutton',
-	'sphinx_tabs.tabs',
-	'sphinx_toolbox',
-	'sphinx_toolbox.autodoc_augment_defaults',
-	'sphinxcontrib.default_values',
-	'sphinxcontrib.extras_require',
 	'sphinxcontrib.httpdomain',
-	'sphinxcontrib.toctree_plus',
+	'sphinxcontrib.extras_require',
+	'sphinx.ext.todo',
 	'sphinxemoji.sphinxemoji',
+	'notfound.extension',
+	'sphinx_copybutton',
+	'sphinxcontrib.default_values',
+	'sphinxcontrib.toctree_plus',
+	'seed_intersphinx_mapping',
+	'attr_utils.autoattrs',
+	'attr_utils.annotations',
+	'enum_tools.autoenum',
 	]
 
 sphinxemoji_style = 'twemoji'
@@ -99,13 +96,30 @@ latex_documents = [('index', f'{slug}.tex', project, author, 'manual')]
 man_pages = [('index', slug, project, [author], 1)]
 texinfo_documents = [('index', slug, project, author, slug, project, 'Miscellaneous')]
 
-toctree_plus_types = {"class", "function", "method", "data"}
+toctree_plus_types = {
+		"class",
+		"function",
+		"method",
+		"data",
+		"enum",
+		"flag",
+		"confval",
+		"directive",
+		"role",
+		"confval",
+		"protocol",
+		"typeddict",
+		"namedtuple",
+		}
+
+add_module_names = False
 
 
 autodoc_default_options = {
 		'members': None,  # Include all members (methods).
 		'special-members': None,
 		"autosummary": None,
+		"show-inheritance": None,
 		'exclude-members': ','.join([   # Exclude "standard" methods.
 				"__dict__",
 				"__class__",
@@ -125,3 +139,6 @@ autodoc_default_options = {
 				"__hash__",
 				]),
 		}
+
+
+overloads_location = "bottom"
