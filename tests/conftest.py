@@ -48,8 +48,7 @@ def api(httpserver: HTTPServer):
 	def respond(url, **params):
 
 		query_params = "&".join(
-				f"{name}={quote(str(value)).replace('%20', '+')}"
-				for name, value in params.items()
+				f"{name}={quote(str(value)).replace('%20', '+')}" for name, value in params.items()
 				)
 		if not url.endswith("/"):
 			url = f"{url}/"

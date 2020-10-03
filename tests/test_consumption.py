@@ -58,11 +58,14 @@ def test_get_consumption(api: OctoAPI):
 				)
 
 
-@pytest.mark.parametrize("key, value", [
-		("consumption", 1.234),
-		("interval_start", "2020-09-29T14:30:00+01:00"),
-		("interval_end", "2020-09-28T15:00:00+01:00"),
-		])
+@pytest.mark.parametrize(
+		"key, value",
+		[
+				("consumption", 1.234),
+				("interval_start", "2020-09-29T14:30:00+01:00"),
+				("interval_end", "2020-09-28T15:00:00+01:00"),
+				]
+		)
 def test_consumption_equality(key, value):
 	consumption = Consumption(
 			consumption=0.409,
@@ -107,10 +110,7 @@ def test_get_consumption_for_period(api: OctoAPI):
 
 def test_get_consumption_reverse(api: OctoAPI):
 	consumption = api.get_consumption(
-			mpan="2000024512368",
-			serial_number="-------------",
-			fuel="electricity",
-			reverse=True
+			mpan="2000024512368", serial_number="-------------", fuel="electricity", reverse=True
 			)
 
 	assert len(consumption) == 2496
@@ -133,10 +133,7 @@ def test_get_consumption_reverse(api: OctoAPI):
 
 def test_get_consumption_grouping(api: OctoAPI):
 	consumption = api.get_consumption(
-			mpan="2000024512368",
-			serial_number="-------------",
-			fuel="electricity",
-			group_by="week"
+			mpan="2000024512368", serial_number="-------------", fuel="electricity", group_by="week"
 			)
 
 	assert len(consumption) == 8
