@@ -135,3 +135,6 @@ View the :ref:`Function Index <genindex>` or browse the `Source Code <_modules/i
 `Browse the GitHub Repository <https://github.com/domdfcoding/octo-api>`__
 
 .. end links
+
+| Parts of this documentation based on https://developer.octopus.energy/docs/api/
+| © 2020, Kraken Technologies Ltd.
