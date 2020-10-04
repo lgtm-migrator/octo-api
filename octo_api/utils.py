@@ -61,6 +61,12 @@ class RateType(StrEnum):
 class Region(StrEnum):
 	"""
 	Enumeration of different electricity supply regions.
+
+	The different regions can be seen on the following map:
+
+	.. image:: pes_boundaries.png
+		:width: 300
+		:alt: Electricity Regions
 	"""
 
 	Eastern = "_A"  # Eastern Electricity
@@ -89,20 +95,18 @@ class MeterPointDetails(NamedTuple):
 	:param gsp: The grid supply point/region that the meter point is located in.
 	:param profile_class: The profile class of the meter point.
 
-	* **Profile Class 1** –- Domestic Unrestricted Customers
-	* **Profile Class 2** –- Domestic Economy 7 Customers
-	* **Profile Class 3** –- Non-Domestic Unrestricted Customers
-	* **Profile Class 4** –- Non-Domestic Economy 7 Customers
-	* **Profile Class 5** –- Non-Domestic Maximum Demand (MD) Customers with a Peak Load Factor (LF) of less than 20%
-	* **Profile Class 6** –- Non-Domestic Maximum Demand Customers with a Peak Load Factor between 20% and 30%
-	* **Profile Class 7** –- Non-Domestic Maximum Demand Customers with a Peak Load Factor between 30% and 40%
-	* **Profile Class 8** –- Non-Domestic Maximum Demand Customers with a Peak Load Factor over 40%
-
-	.. seealso:: `Load Profiles and their use in Electricity Settlement <https://www.elexon.co.uk/documents/training-guidance/bsc-guidance-notes/load-profiles/>`_ by Elexon
+	* **Profile Class 1** -- Domestic Unrestricted Customers
+	* **Profile Class 2** -- Domestic Economy 7 Customers
+	* **Profile Class 3** -- Non-Domestic Unrestricted Customers
+	* **Profile Class 4** -- Non-Domestic Economy 7 Customers
+	* **Profile Class 5** -- Non-Domestic Maximum Demand (MD) Customers with a Peak Load Factor (LF) of less than 20%
+	* **Profile Class 6** -- Non-Domestic Maximum Demand Customers with a Peak Load Factor between 20% and 30%
+	* **Profile Class 7** -- Non-Domestic Maximum Demand Customers with a Peak Load Factor between 30% and 40%
+	* **Profile Class 8** -- Non-Domestic Maximum Demand Customers with a Peak Load Factor over 40%
 
 	Information from https://www.elexon.co.uk/knowledgebase/profile-classes/
 
-	|
+	.. seealso:: `Load Profiles and their use in Electricity Settlement <https://www.elexon.co.uk/documents/training-guidance/bsc-guidance-notes/load-profiles/>`_ by Elexon
 	"""
 
 	mpan: str

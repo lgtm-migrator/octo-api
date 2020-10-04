@@ -257,7 +257,7 @@ class OctoAPI:
 		:param period_to: Show consumption to the given datetime (exclusive).
 			This parameter also requires providing the ``period_from`` parameter to create a range.
 		:param page_size: Page size of returned results.
-			Default is ``100``, maximum ``is 25,000`` to give a full year of half-hourly consumption details.
+			Default is ``100``, maximum is ``25,000`` to give a full year of half-hourly consumption details.
 		:no-default page_size:
 		:param reverse: Returns the results ordered from most oldest to newest. By default the results are from most recent backwards.
 		:no-default reverse:

@@ -39,7 +39,14 @@ from domdf_python_tools.doctools import prettify_docstrings
 # this package
 from octo_api.utils import from_iso_zulu
 
-__all__ = ["_term_converter", "BaseProduct", "Product", "_parse_tariffs", "DetailedProduct", "Tariff", "RateInfo"]
+__all__ = [
+		"BaseProduct",
+		"Product",
+		"DetailedProduct",
+		"Tariff",
+		"RateInfo",
+		"RegionalTariffs",
+		]
 
 
 def _term_converter(term: Optional[int]) -> Optional[int]:
@@ -243,11 +250,8 @@ class RateInfo:
 
 @prettify_docstrings
 class RegionalTariffs(Dict[str, Dict[str, Tariff]]):
-	r"""
+	"""
 	Mapping of GSP regions to a mapping of payment methods to :class:`Tariffs <.Tariff>`.
-
-	| **Key Type:** :class:`str`
-	| **Value Type:** :class:`~typing.Dict`\[:class:`str`\,  :class:`~.Tariff`\]
 	"""
 
 	def __str__(self) -> str:

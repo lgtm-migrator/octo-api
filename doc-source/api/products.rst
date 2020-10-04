@@ -22,3 +22,5 @@
 .. autoattrs:: octo_api.products.Tariff
 	:no-special-members:
 	:no-init-attribs:
+
+.. autoclass:: octo_api.products.RegionalTariffs
