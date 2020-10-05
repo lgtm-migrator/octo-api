@@ -73,6 +73,25 @@ class PaginatedResponse(Iterable[_T]):
 	:param query_url:
 	:param query_params:
 	:param obj_type: The object to convert the response data to.
+
+	.. note::
+
+		This class assumes the JSON response is in the format used by
+		`Django REST framework <https://www.django-rest-framework.org/>`_.
+
+		The response should be in the following format:
+
+		.. code-block:: json
+
+			{
+				"count": 1023,
+				"next": "https://api.example.org/accounts/?page=5",
+				"previous": "https://api.example.org/accounts/?page=3",
+				"results": [
+				]
+			}
+
+		See https://www.django-rest-framework.org/api-guide/pagination/ for more information.
 	"""
 
 	_next_page: Optional[int]
