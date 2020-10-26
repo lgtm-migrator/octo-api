@@ -34,6 +34,7 @@ from typing import Any, Dict, NamedTuple, Optional, Type, Union
 # 3rd party
 import attr
 import prettyprinter  # type: ignore
+from domdf_python_tools.doctools import prettify_docstrings
 from domdf_python_tools.stringlist import StringList
 from enum_tools import StrEnum
 
@@ -124,7 +125,7 @@ class Region(StrEnum):
 	NorthScotland = "_P"  # North of Scotland Hydro Board
 
 
-# @prettify_docstrings
+@prettify_docstrings
 class MeterPointDetails(NamedTuple):
 	"""
 	Information about a meter point.

@@ -2,7 +2,7 @@
 #
 #  products.py
 """
-Class to model products and tariffs.
+Classes to model products and tariffs.
 """
 #
 #  Copyright © 2020 Dominic Davis-Foster <dominic@davis-foster.co.uk>
@@ -222,10 +222,10 @@ class Tariff:
 	#: The tariff code.
 	code: str = attr.ib(converter=str)
 
-	#: In p/day (pence per day)
+	#: In p/day (pence per day).
 	standing_charge_exc_vat: float = attr.ib(converter=float)
 
-	#: In p/day (pence per day)
+	#: In p/day (pence per day).
 	standing_charge_inc_vat: float = attr.ib(converter=float)
 
 	online_discount_exc_vat: int = attr.ib(converter=int)
@@ -236,22 +236,22 @@ class Tariff:
 	exit_fees_inc_vat: int = attr.ib(converter=int)
 	links: List[Dict[str, Any]] = attr.ib(converter=list)
 
-	#: In p/kWh (pence per kilowatt hour)
+	#: In p/kWh (pence per kilowatt hour).
 	standard_unit_rate_exc_vat: Optional[float] = attr.ib(default=None)
 
-	#: In p/kWh (pence per kilowatt hour)
+	#: In p/kWh (pence per kilowatt hour).
 	standard_unit_rate_inc_vat: Optional[float] = attr.ib(default=None)
 
-	#: In p/kWh (pence per kilowatt hour)
+	#: In p/kWh (pence per kilowatt hour).
 	day_unit_rate_exc_vat: Optional[float] = attr.ib(default=None)
 
-	#: In p/kWh (pence per kilowatt hour)
+	#: In p/kWh (pence per kilowatt hour).
 	day_unit_rate_inc_vat: Optional[float] = attr.ib(default=None)
 
-	#: In p/kWh (pence per kilowatt hour)
+	#: In p/kWh (pence per kilowatt hour).
 	night_unit_rate_exc_vat: Optional[float] = attr.ib(default=None)
 
-	#: In p/kWh (pence per kilowatt hour)
+	#: In p/kWh (pence per kilowatt hour).
 	night_unit_rate_inc_vat: Optional[float] = attr.ib(default=None)
 
 
@@ -274,10 +274,10 @@ class RateInfo:
 	Represents the unit rate of a tariff at a particular period in time.
 	"""
 
-	#: In p/kWh (pence per kilowatt hour)
+	#: In p/kWh (pence per kilowatt hour).
 	value_exc_vat: float = attr.ib(converter=float)
 
-	#: In p/kWh (pence per kilowatt hour)
+	#: In p/kWh (pence per kilowatt hour).
 	value_inc_vat: float = attr.ib(converter=float)
 
 	#: The date and time from which this rate is in effect.
