@@ -29,6 +29,7 @@ Class for handling paginated API responses.
 # stdlib
 import re
 from typing import Any, Dict, Iterable, Iterator, List, MutableMapping, Optional, Type, TypeVar, Union, overload
+from urllib.parse import parse_qs, urlparse
 
 # 3rd party
 from apeye.url import SlumberURL
@@ -87,8 +88,7 @@ class PaginatedResponse(Iterable[_T]):
 				"count": 1023,
 				"next": "https://api.example.org/accounts/?page=5",
 				"previous": "https://api.example.org/accounts/?page=3",
-				"results": [
-				]
+				"results": []
 			}
 
 		See https://www.django-rest-framework.org/api-guide/pagination/ for more information.
@@ -124,14 +124,24 @@ class PaginatedResponse(Iterable[_T]):
 
 	def _parse_pages(self, response: OctoResponse):
 		if response["next"] is not None:
-			m = page_regex.match(response["next"])
-			if m:
-				self._next_page = int(m.group(1))
+			query = parse_qs(urlparse(response["next"]).query)
+			page = query.get("page", [])
+			if page:
+				self._next_page = int(page[0])
+			else:
+				self._next_page = None
+		else:
+			self._next_page = None
 
 		if response["previous"] is not None:
-			m = page_regex.match(response["previous"])
-			if m:
-				self._previous_page = int(m.group(1))
+			query = parse_qs(urlparse(response["previous"]).query)
+			page = query.get("page", [])
+			if page:
+				self._previous_page = int(page[0])
+			else:
+				self._previous_page = None
+		else:
+			self._previous_page = None
 
 	def _get_next_page(self):
 		# print(f"Getting {self._next_page}")
@@ -142,6 +152,7 @@ class PaginatedResponse(Iterable[_T]):
 
 		self._results.extend(response["results"])
 		self._parse_pages(response)
+		return response["results"]
 
 	def __iter__(self) -> Iterator[_T]:
 		"""
@@ -152,9 +163,7 @@ class PaginatedResponse(Iterable[_T]):
 			yield self.obj_type(**res)
 
 		while self._next_page:
-			self._get_next_page()
-
-			for res in self._results:
+			for res in self._get_next_page():
 				yield self.obj_type(**res)
 
 	def __eq__(self, other) -> bool:
