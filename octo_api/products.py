@@ -188,7 +188,8 @@ class DetailedProduct(BaseProduct):
 	* The ``standing_charge_*`` values are listed in p/day (pence per day).
 	* The ``annual_cost_*`` values are listed in p (pence).
 	"""
-	# 	Historical charges can be browsed using the URLs contained under the key links.
+
+	# Historical charges can be browsed using the URLs contained under the key links.
 
 	#:
 	tariffs_active_at: Optional[datetime] = attr.ib(converter=from_iso_zulu)

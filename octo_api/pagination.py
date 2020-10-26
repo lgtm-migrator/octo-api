@@ -36,30 +36,24 @@ from apeye.url import SlumberURL
 from domdf_python_tools.doctools import prettify_docstrings
 from typing_extensions import TypedDict
 
-__all__ = ["OctoResponse", "PaginatedResponse", "page_regex"]
+__all__ = ["OctoResponse", "PaginatedResponse"]
 
 _T = TypeVar("_T")
-
-page_regex = re.compile(r".*(?:/\?|&)page=(\d+).*")
-"""
-Regular expression for matching the number of the next/previous page
-from the URL pointing to the next/previous page.
-"""
 
 
 class OctoResponse(TypedDict):
 	"""
 	:class:`~typing.TypedDict` representing the raw JSON data returned by
 	the Octopus Energy API.
-	"""
+	"""  # noqa: D400
 
-	#: The total number of responses
+	#: The total number of responses.
 	count: int
 	#: The URL of the next page of results.
-	next: str
+	next: str  # noqa: A003
 	#: The URL of the previous page of results.
 	previous: str
-	# The current page of results.
+	#: The current page of results.
 	results: List[Dict[str, Any]]
 
 

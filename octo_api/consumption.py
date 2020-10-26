@@ -41,15 +41,15 @@ __all__ = ["Consumption"]
 
 
 @serde
-@prettify_docstrings
 @add_repr
+@prettify_docstrings
 @attr.s(slots=True, frozen=True, repr=False)
 class Consumption:
 	"""
 	Represents the consumption for a given period of time.
 	"""
 
-	#: The consumption
+	#: The consumption.
 	consumption: float = attr.ib()
 
 	#: The start of the time period.
