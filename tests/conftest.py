@@ -1,5 +1,6 @@
 # stdlib
 import json
+import os
 import pathlib
 from typing import Callable
 from urllib.parse import quote
@@ -169,3 +170,9 @@ def api(httpserver: HTTPServer):
 	a.API_BASE = SlumberURL(httpserver.url_for("/v1"), auth=('', ''))
 
 	return a
+
+
+@pytest.fixture
+def original_datadir(request):
+	# Work around pycharm confusing datadir with test file.
+	return pathlib.Path(os.path.splitext(request.module.__file__)[0] + "_")

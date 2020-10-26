@@ -1,6 +1,9 @@
 # stdlib
 from typing import Dict
 
+# 3rd party
+from pytest_regressions.file_regression import FileRegressionFixture
+
 # this package
 from octo_api.api import OctoAPI
 from octo_api.pagination import PaginatedResponse
@@ -1770,11 +1773,13 @@ single_register_electricity_tariffs = {
 		}
 
 
-def test_parse_tariffs():
+def test_parse_tariffs(file_regression: FileRegressionFixture):
 	assert isinstance(_parse_tariffs(single_register_electricity_tariffs), RegionalTariffs)
-	assert repr(
-			_parse_tariffs(single_register_electricity_tariffs)
-			) == "RegionalTariffs([_A, _B, _C, _D, _E, _F, _G, _H, _J, _K, _L, _M, _N, _P])"
+	assert str(_parse_tariffs(single_register_electricity_tariffs)) == "RegionalTariffs(['direct_debit_monthly'])"
+
+	file_regression.check(
+			repr(_parse_tariffs(single_register_electricity_tariffs)), encoding="UTF-8", extension=".json"
+			)
 
 	tariffs: Dict[str, Dict[str, Tariff]] = {}
 
@@ -1784,4 +1789,5 @@ def test_parse_tariffs():
 		for method, tariff in payment_methods.items():
 			tariffs[gsp][method] = Tariff(**tariff)  # type: ignore
 
-	assert str(_parse_tariffs(single_register_electricity_tariffs)) == str(tariffs)
+	assert repr(_parse_tariffs(single_register_electricity_tariffs)) == str(tariffs)
+	assert repr(_parse_tariffs(single_register_electricity_tariffs)) == repr(tariffs)
