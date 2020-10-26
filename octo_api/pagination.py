@@ -70,8 +70,8 @@ class PaginatedResponse(Iterable[_T]):
 	The items within the response can be iterated over or accessed by their indices.
 	The total number of items can be accessed with :func:`len(response) <len>`.
 
-	:param query_url:
-	:param query_params:
+	:param query_url: The initial query URL.
+	:param query_params: The parameters to the query.
 	:param obj_type: The object to convert the response data to.
 
 	.. note::

@@ -28,16 +28,18 @@ Class to model products and tariffs.
 
 # stdlib
 from datetime import datetime
-from typing import Any, Dict, Iterable, List, Mapping, MutableMapping, Optional, TypeVar
+from itertools import chain
+from typing import Any, Dict, Iterable, List, MutableMapping, NamedTuple, Optional, TypeVar, Union
 
 # 3rd party
 import attr
-from attr_utils.pprinter import pretty_repr
+from attr_utils.pprinter import register_pretty
 from attr_utils.serialise import serde
 from domdf_python_tools.doctools import prettify_docstrings
+from domdf_python_tools.stringlist import DelimitedList
 
 # this package
-from octo_api.utils import from_iso_zulu
+from octo_api.utils import add_repr, from_iso_zulu
 
 __all__ = [
 		"BaseProduct",
@@ -46,6 +48,7 @@ __all__ = [
 		"Tariff",
 		"RateInfo",
 		"RegionalTariffs",
+		"RegionalQuotes",
 		]
 
 
@@ -67,8 +70,9 @@ def _links_converter(iterable: Iterable[MutableMapping[str, Any]]) -> List[Mutab
 
 
 @serde
-@pretty_repr
-@attr.s(slots=True, frozen=True)
+@prettify_docstrings
+@add_repr
+@attr.s(slots=True, frozen=True, repr=False)
 class BaseProduct:
 	"""
 	Represents an Octopus Energy product.
@@ -120,7 +124,8 @@ class BaseProduct:
 	term: Optional[int] = attr.ib(converter=_term_converter)
 
 
-@attr.s(slots=True, frozen=True)
+@prettify_docstrings
+@attr.s(slots=True, frozen=True, repr=False)
 class Product(BaseProduct):
 	"""
 	Represents an Octopus Energy product.
@@ -148,9 +153,30 @@ def _parse_tariffs(tariffs_dict: Dict[str, Dict[str, Dict[str, Any]]]) -> "Regio
 	return tariffs
 
 
+def _parse_quotes(quotes_dict: Dict[str, Dict[str, Dict[str, Any]]]) -> "RegionalQuotes":
+	"""
+	Parse quote data for a :class:`~.DetailedProduct`.
+
+	:param quotes_dict:
+	"""
+
+	quotes: RegionalQuotes = RegionalQuotes()
+
+	for gsp, payment_methods in quotes_dict.items():
+		quotes[gsp] = {}
+
+		for method, fuels in payment_methods.items():
+			quotes[gsp][method] = {}
+
+			for fuel, quote in fuels.items():
+				quotes[gsp][method][fuel] = Quote(**quote)
+
+	return quotes
+
+
 @serde
-@pretty_repr
-@attr.s(slots=True, frozen=True)
+@prettify_docstrings
+@attr.s(slots=True, frozen=True, repr=False)
 class DetailedProduct(BaseProduct):
 	"""
 	Represents an Octopus Energy product, with detailed tariff information.
@@ -177,15 +203,16 @@ class DetailedProduct(BaseProduct):
 	single_register_gas_tariffs: Dict = attr.ib(converter=_parse_tariffs)
 
 	#:
-	sample_quotes: Dict = attr.ib()
+	sample_quotes: Dict = attr.ib(converter=_parse_quotes)
 
 	#:
 	sample_consumption: Dict = attr.ib()
 
 
 @serde
-@pretty_repr
-@attr.s(slots=True, frozen=True)
+@prettify_docstrings
+@add_repr
+@attr.s(slots=True, frozen=True, repr=False)
 class Tariff:
 	"""
 	Represents a tariff for a product.
@@ -227,9 +254,20 @@ class Tariff:
 	night_unit_rate_inc_vat: Optional[float] = attr.ib(default=None)
 
 
+@prettify_docstrings
+class Quote(NamedTuple):
+	"""
+	Represents a quote for a product.
+	"""
+
+	annual_cost_inc_vat: float
+	annual_cost_exc_vat: float
+
+
 @serde
-@pretty_repr
-@attr.s(slots=True, frozen=True)
+@prettify_docstrings
+@add_repr
+@attr.s(slots=True, frozen=True, repr=False)
 class RateInfo:
 	"""
 	Represents the unit rate of a tariff at a particular period in time.
@@ -248,6 +286,13 @@ class RateInfo:
 	valid_to: Optional[datetime] = attr.ib(converter=from_iso_zulu)
 
 
+_T = TypeVar("_T")
+
+
+def _sortedset(iterable: Iterable[str]) -> DelimitedList:
+	return DelimitedList(sorted(set(iterable)))
+
+
 @prettify_docstrings
 class RegionalTariffs(Dict[str, Dict[str, Tariff]]):
 	"""
@@ -255,7 +300,24 @@ class RegionalTariffs(Dict[str, Dict[str, Tariff]]):
 	"""
 
 	def __str__(self) -> str:
-		return super().__repr__()
+		payment_methods = _sortedset(chain.from_iterable(k.keys() for k in self.values()))
+		return f"{self.__class__.__name__}(['{payment_methods:, }'])"
 
-	def __repr__(self) -> str:
-		return f"{self.__class__.__name__}([{', '.join(self.keys())}])"
+
+@prettify_docstrings
+class RegionalQuotes(Dict[str, Dict[str, Dict[str, Quote]]]):
+	"""
+	Mapping of GSP regions to a mapping of payment methods to a mapping of fuel types to :class:`Quotes <.Quote>`.
+	"""
+
+	def __str__(self) -> str:
+		fuel_types = _sortedset(
+				chain.from_iterable(kk.keys() for kk in chain.from_iterable(k.values() for k in self.values()))
+				)
+		return f"{self.__class__.__name__}([{', '.join(fuel_types)}])"
+
+
+@register_pretty(RegionalQuotes)
+@register_pretty(RegionalTariffs)
+def pretty_regional_tariffs(value: Union[RegionalTariffs, RegionalQuotes], ctx) -> str:
+	return str(value)

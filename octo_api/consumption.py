@@ -31,18 +31,19 @@ from datetime import datetime
 
 # 3rd party
 import attr
-from attr_utils.pprinter import pretty_repr
 from attr_utils.serialise import serde
+from domdf_python_tools.doctools import prettify_docstrings
 
 # this package
-from octo_api.utils import from_iso_zulu
+from octo_api.utils import add_repr, from_iso_zulu
 
 __all__ = ["Consumption"]
 
 
 @serde
-@pretty_repr
-@attr.s(slots=True, frozen=True)
+@prettify_docstrings
+@add_repr
+@attr.s(slots=True, frozen=True, repr=False)
 class Consumption:
 	"""
 	Represents the consumption for a given period of time.

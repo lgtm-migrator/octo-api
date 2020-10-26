@@ -1,11 +1,21 @@
 # stdlib
 import sys
-from typing import Any, Dict, NamedTuple, Optional, Union
+import textwrap
+from typing import Any, Dict, NamedTuple, Optional, Type, Union
 
 # 3rd party
+import attr
+import prettyprinter  # type: ignore
+from domdf_python_tools.stringlist import StringList
 from enum_tools import StrEnum
 
-__all__ = ["from_iso_zulu", "RateType", "Region", "MeterPointDetails"]
+__all__ = [
+		"from_iso_zulu",
+		"RateType",
+		"Region",
+		"MeterPointDetails",
+		"add_repr",
+		]
 
 # stdlib
 from datetime import datetime, timedelta, timezone
@@ -129,3 +139,51 @@ bst = timezone(timedelta(seconds=3600))
 gmt = timezone.utc
 
 utc = gmt
+
+
+def add_repr(cls: Type) -> Type:
+	"""
+	Add a pretty-printed ``__repr__`` function to the decorated attrs class.
+
+	:param cls:
+
+	.. seealso:: :func:`attr_utils.pprinter.pretty_repr`.
+	"""
+
+	if attr.has(cls):
+
+		def __repr__(self) -> str:
+			buf = StringList()
+			buf.indent_type = "    "
+			buf.append(f"{self.__class__.__module__}.{self.__class__.__qualname__}(")
+
+			with buf.with_indent_size(1):
+				for attrib in attr.fields(self.__class__):
+					value = getattr(self, attrib.name)
+
+					if isinstance(value, datetime):
+						buf.append(f"{attrib.name}={value.isoformat()!r},")
+
+					elif isinstance(value, str):
+						lines = textwrap.wrap(value, width=80 - len(attrib.name) - 1)
+						buf.append(f"{attrib.name}={lines.pop(0)!r}")
+
+						for line in lines:
+							buf.append(' ' * len(attrib.name) + ' ' + repr(line))
+
+						buf[-1] = f"{buf[-1][len(buf.indent_type) * buf.indent_size:]},"
+					elif value is None:
+						buf.append(f"{attrib.name}=None,")
+					else:
+						buf.append(f"{attrib.name}={prettyprinter.pformat(value)},")
+
+			buf.append(')')
+			return str(buf)
+
+		__repr__.__doc__ = f"Return a string representation of the :class:`~.{cls.__name__}`."
+
+		cls.__repr__ = __repr__  # type: ignore
+		cls.__repr__.__qualname__ = f"{cls.__name__}.__repr__"
+		cls.__repr__.__module__ = cls.__module__
+
+	return cls

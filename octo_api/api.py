@@ -95,6 +95,37 @@ class OctoAPI:
 		:no-default available_at:
 
 		.. https://developer.octopus.energy/docs/api/#list-products
+
+		**Example**
+
+		.. code-block:: python
+
+			>>> api.get_products()[0]
+			octo_api.products.Product(
+				available_from='2016-01-01T:00:00:00+00:00',
+				available_to=None,
+				brand='AFFECT_ENERGY',
+				code='1201',
+				description='Affect Standard Tariff',
+				display_name='Affect Standard Tariff',
+				full_name='Affect Standard Tariff',
+				is_business=False,
+				is_green=False,
+				is_prepay=False,
+				is_restricted=False,
+				is_tracker=False,
+				is_variable=True,
+				links=[
+					{
+						'href': 'https://api.octopus.energy/v1/products/1201/',
+						'method': 'GET',
+						'rel': 'self'
+					}
+				],
+				term=None,
+				direction='IMPORT',
+			)
+
 		"""
 
 		parameters: Dict[str, Any] = {}
@@ -127,6 +158,59 @@ class OctoAPI:
 		:no-default available_at:
 
 		.. https://developer.octopus.energy/docs/api/#retrieve-a-product
+
+
+		**Example**
+
+		.. code-block:: python
+
+			>>> api.get_product_info(product_code='VAR-17-01-11')
+			octo_api.products.DetailedProduct(
+				available_from='2017-01-11T10:00:00+00:00',
+				available_to='2018-02-15T00:00:00+00:00',
+				brand='S_ENERGY',
+				code='7-01-11',
+				description='This variable tariff always offers great value - driven by our'
+							'belief that prices should be fair for the long term, not just a'
+							'fixed term. We aim for 50% renewable electricity on this tariff.',
+				display_name='pus',
+				full_name='ctopus January 2017 v1',
+				is_business=False,
+				is_green=False,
+				is_prepay=False,
+				is_restricted=False,
+				is_tracker=False,
+				is_variable=True,
+				links=[
+					{
+						'href': 'https://api.octopus.energy/v1/products/VAR-17-01-11/',
+						'method': 'GET',
+						'rel': 'self'
+					}
+				],
+				term=None,
+				tariffs_active_at='2020-10-26T11:15:17.208285+00:00',
+				single_register_electricity_tariffs=RegionalTariffs(['direct_debit_monthly']),
+				dual_register_electricity_tariffs=RegionalTariffs(['direct_debit_monthly']),
+				single_register_gas_tariffs=RegionalTariffs(['direct_debit_monthly']),
+				sample_quotes=RegionalQuotes([dual_fuel_dual_rate, dual_fuel_single_rate, electricity_dual_rate, electricity_single_rate]),
+				sample_consumption={
+					'electricity_single_rate': {'electricity_standard': 2900},
+					'electricity_dual_rate': {
+						'electricity_day': 2436,
+						'electricity_night': 1764
+					},
+					'dual_fuel_single_rate': {
+						'electricity_standard': 2900,
+						'gas_standard': 12000
+					},
+					'dual_fuel_dual_rate': {
+						'electricity_day': 2436,
+						'electricity_night': 1764,
+						'gas_standard': 12000
+					}
+				},
+			)
 		"""
 
 		parameters = {}
