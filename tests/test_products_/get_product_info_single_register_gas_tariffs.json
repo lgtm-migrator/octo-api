@@ -1,0 +1,380 @@
+{
+  "_A": {
+    "direct_debit_monthly": {
+      "code": "G-1R-VAR-17-01-11-A",
+      "standing_charge_exc_vat": 16.0,
+      "standing_charge_inc_vat": 16.8,
+      "online_discount_exc_vat": 0,
+      "online_discount_inc_vat": 0,
+      "dual_fuel_discount_exc_vat": 0,
+      "dual_fuel_discount_inc_vat": 0,
+      "exit_fees_exc_vat": 0,
+      "exit_fees_inc_vat": 0,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/gas-tariffs/G-1R-VAR-17-01-11-A/standing-charges/",
+          "method": "GET",
+          "rel": "standing_charges"
+        },
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/gas-tariffs/G-1R-VAR-17-01-11-A/standard-unit-rates/",
+          "method": "GET",
+          "rel": "standard_unit_rates"
+        }
+      ],
+      "standard_unit_rate_exc_vat": 3.05,
+      "standard_unit_rate_inc_vat": 3.2025
+    }
+  },
+  "_B": {
+    "direct_debit_monthly": {
+      "code": "G-1R-VAR-17-01-11-B",
+      "standing_charge_exc_vat": 16.0,
+      "standing_charge_inc_vat": 16.8,
+      "online_discount_exc_vat": 0,
+      "online_discount_inc_vat": 0,
+      "dual_fuel_discount_exc_vat": 0,
+      "dual_fuel_discount_inc_vat": 0,
+      "exit_fees_exc_vat": 0,
+      "exit_fees_inc_vat": 0,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/gas-tariffs/G-1R-VAR-17-01-11-B/standing-charges/",
+          "method": "GET",
+          "rel": "standing_charges"
+        },
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/gas-tariffs/G-1R-VAR-17-01-11-B/standard-unit-rates/",
+          "method": "GET",
+          "rel": "standard_unit_rates"
+        }
+      ],
+      "standard_unit_rate_exc_vat": 3.06,
+      "standard_unit_rate_inc_vat": 3.213
+    }
+  },
+  "_C": {
+    "direct_debit_monthly": {
+      "code": "G-1R-VAR-17-01-11-C",
+      "standing_charge_exc_vat": 16.0,
+      "standing_charge_inc_vat": 16.8,
+      "online_discount_exc_vat": 0,
+      "online_discount_inc_vat": 0,
+      "dual_fuel_discount_exc_vat": 0,
+      "dual_fuel_discount_inc_vat": 0,
+      "exit_fees_exc_vat": 0,
+      "exit_fees_inc_vat": 0,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/gas-tariffs/G-1R-VAR-17-01-11-C/standing-charges/",
+          "method": "GET",
+          "rel": "standing_charges"
+        },
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/gas-tariffs/G-1R-VAR-17-01-11-C/standard-unit-rates/",
+          "method": "GET",
+          "rel": "standard_unit_rates"
+        }
+      ],
+      "standard_unit_rate_exc_vat": 3.3,
+      "standard_unit_rate_inc_vat": 3.465
+    }
+  },
+  "_D": {
+    "direct_debit_monthly": {
+      "code": "G-1R-VAR-17-01-11-D",
+      "standing_charge_exc_vat": 16.0,
+      "standing_charge_inc_vat": 16.8,
+      "online_discount_exc_vat": 0,
+      "online_discount_inc_vat": 0,
+      "dual_fuel_discount_exc_vat": 0,
+      "dual_fuel_discount_inc_vat": 0,
+      "exit_fees_exc_vat": 0,
+      "exit_fees_inc_vat": 0,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/gas-tariffs/G-1R-VAR-17-01-11-D/standing-charges/",
+          "method": "GET",
+          "rel": "standing_charges"
+        },
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/gas-tariffs/G-1R-VAR-17-01-11-D/standard-unit-rates/",
+          "method": "GET",
+          "rel": "standard_unit_rates"
+        }
+      ],
+      "standard_unit_rate_exc_vat": 3.26,
+      "standard_unit_rate_inc_vat": 3.423
+    }
+  },
+  "_E": {
+    "direct_debit_monthly": {
+      "code": "G-1R-VAR-17-01-11-E",
+      "standing_charge_exc_vat": 16.0,
+      "standing_charge_inc_vat": 16.8,
+      "online_discount_exc_vat": 0,
+      "online_discount_inc_vat": 0,
+      "dual_fuel_discount_exc_vat": 0,
+      "dual_fuel_discount_inc_vat": 0,
+      "exit_fees_exc_vat": 0,
+      "exit_fees_inc_vat": 0,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/gas-tariffs/G-1R-VAR-17-01-11-E/standing-charges/",
+          "method": "GET",
+          "rel": "standing_charges"
+        },
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/gas-tariffs/G-1R-VAR-17-01-11-E/standard-unit-rates/",
+          "method": "GET",
+          "rel": "standard_unit_rates"
+        }
+      ],
+      "standard_unit_rate_exc_vat": 3.15,
+      "standard_unit_rate_inc_vat": 3.3075
+    }
+  },
+  "_F": {
+    "direct_debit_monthly": {
+      "code": "G-1R-VAR-17-01-11-F",
+      "standing_charge_exc_vat": 16.0,
+      "standing_charge_inc_vat": 16.8,
+      "online_discount_exc_vat": 0,
+      "online_discount_inc_vat": 0,
+      "dual_fuel_discount_exc_vat": 0,
+      "dual_fuel_discount_inc_vat": 0,
+      "exit_fees_exc_vat": 0,
+      "exit_fees_inc_vat": 0,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/gas-tariffs/G-1R-VAR-17-01-11-F/standing-charges/",
+          "method": "GET",
+          "rel": "standing_charges"
+        },
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/gas-tariffs/G-1R-VAR-17-01-11-F/standard-unit-rates/",
+          "method": "GET",
+          "rel": "standard_unit_rates"
+        }
+      ],
+      "standard_unit_rate_exc_vat": 3.1,
+      "standard_unit_rate_inc_vat": 3.255
+    }
+  },
+  "_G": {
+    "direct_debit_monthly": {
+      "code": "G-1R-VAR-17-01-11-G",
+      "standing_charge_exc_vat": 16.0,
+      "standing_charge_inc_vat": 16.8,
+      "online_discount_exc_vat": 0,
+      "online_discount_inc_vat": 0,
+      "dual_fuel_discount_exc_vat": 0,
+      "dual_fuel_discount_inc_vat": 0,
+      "exit_fees_exc_vat": 0,
+      "exit_fees_inc_vat": 0,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/gas-tariffs/G-1R-VAR-17-01-11-G/standing-charges/",
+          "method": "GET",
+          "rel": "standing_charges"
+        },
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/gas-tariffs/G-1R-VAR-17-01-11-G/standard-unit-rates/",
+          "method": "GET",
+          "rel": "standard_unit_rates"
+        }
+      ],
+      "standard_unit_rate_exc_vat": 3.17,
+      "standard_unit_rate_inc_vat": 3.3285
+    }
+  },
+  "_H": {
+    "direct_debit_monthly": {
+      "code": "G-1R-VAR-17-01-11-H",
+      "standing_charge_exc_vat": 16.0,
+      "standing_charge_inc_vat": 16.8,
+      "online_discount_exc_vat": 0,
+      "online_discount_inc_vat": 0,
+      "dual_fuel_discount_exc_vat": 0,
+      "dual_fuel_discount_inc_vat": 0,
+      "exit_fees_exc_vat": 0,
+      "exit_fees_inc_vat": 0,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/gas-tariffs/G-1R-VAR-17-01-11-H/standing-charges/",
+          "method": "GET",
+          "rel": "standing_charges"
+        },
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/gas-tariffs/G-1R-VAR-17-01-11-H/standard-unit-rates/",
+          "method": "GET",
+          "rel": "standard_unit_rates"
+        }
+      ],
+      "standard_unit_rate_exc_vat": 3.34,
+      "standard_unit_rate_inc_vat": 3.507
+    }
+  },
+  "_J": {
+    "direct_debit_monthly": {
+      "code": "G-1R-VAR-17-01-11-J",
+      "standing_charge_exc_vat": 16.0,
+      "standing_charge_inc_vat": 16.8,
+      "online_discount_exc_vat": 0,
+      "online_discount_inc_vat": 0,
+      "dual_fuel_discount_exc_vat": 0,
+      "dual_fuel_discount_inc_vat": 0,
+      "exit_fees_exc_vat": 0,
+      "exit_fees_inc_vat": 0,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/gas-tariffs/G-1R-VAR-17-01-11-J/standing-charges/",
+          "method": "GET",
+          "rel": "standing_charges"
+        },
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/gas-tariffs/G-1R-VAR-17-01-11-J/standard-unit-rates/",
+          "method": "GET",
+          "rel": "standard_unit_rates"
+        }
+      ],
+      "standard_unit_rate_exc_vat": 3.28,
+      "standard_unit_rate_inc_vat": 3.444
+    }
+  },
+  "_K": {
+    "direct_debit_monthly": {
+      "code": "G-1R-VAR-17-01-11-K",
+      "standing_charge_exc_vat": 16.0,
+      "standing_charge_inc_vat": 16.8,
+      "online_discount_exc_vat": 0,
+      "online_discount_inc_vat": 0,
+      "dual_fuel_discount_exc_vat": 0,
+      "dual_fuel_discount_inc_vat": 0,
+      "exit_fees_exc_vat": 0,
+      "exit_fees_inc_vat": 0,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/gas-tariffs/G-1R-VAR-17-01-11-K/standing-charges/",
+          "method": "GET",
+          "rel": "standing_charges"
+        },
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/gas-tariffs/G-1R-VAR-17-01-11-K/standard-unit-rates/",
+          "method": "GET",
+          "rel": "standard_unit_rates"
+        }
+      ],
+      "standard_unit_rate_exc_vat": 3.16,
+      "standard_unit_rate_inc_vat": 3.318
+    }
+  },
+  "_L": {
+    "direct_debit_monthly": {
+      "code": "G-1R-VAR-17-01-11-L",
+      "standing_charge_exc_vat": 16.0,
+      "standing_charge_inc_vat": 16.8,
+      "online_discount_exc_vat": 0,
+      "online_discount_inc_vat": 0,
+      "dual_fuel_discount_exc_vat": 0,
+      "dual_fuel_discount_inc_vat": 0,
+      "exit_fees_exc_vat": 0,
+      "exit_fees_inc_vat": 0,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/gas-tariffs/G-1R-VAR-17-01-11-L/standing-charges/",
+          "method": "GET",
+          "rel": "standing_charges"
+        },
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/gas-tariffs/G-1R-VAR-17-01-11-L/standard-unit-rates/",
+          "method": "GET",
+          "rel": "standard_unit_rates"
+        }
+      ],
+      "standard_unit_rate_exc_vat": 3.37,
+      "standard_unit_rate_inc_vat": 3.5385
+    }
+  },
+  "_M": {
+    "direct_debit_monthly": {
+      "code": "G-1R-VAR-17-01-11-M",
+      "standing_charge_exc_vat": 16.0,
+      "standing_charge_inc_vat": 16.8,
+      "online_discount_exc_vat": 0,
+      "online_discount_inc_vat": 0,
+      "dual_fuel_discount_exc_vat": 0,
+      "dual_fuel_discount_inc_vat": 0,
+      "exit_fees_exc_vat": 0,
+      "exit_fees_inc_vat": 0,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/gas-tariffs/G-1R-VAR-17-01-11-M/standing-charges/",
+          "method": "GET",
+          "rel": "standing_charges"
+        },
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/gas-tariffs/G-1R-VAR-17-01-11-M/standard-unit-rates/",
+          "method": "GET",
+          "rel": "standard_unit_rates"
+        }
+      ],
+      "standard_unit_rate_exc_vat": 3.12,
+      "standard_unit_rate_inc_vat": 3.276
+    }
+  },
+  "_N": {
+    "direct_debit_monthly": {
+      "code": "G-1R-VAR-17-01-11-N",
+      "standing_charge_exc_vat": 16.0,
+      "standing_charge_inc_vat": 16.8,
+      "online_discount_exc_vat": 0,
+      "online_discount_inc_vat": 0,
+      "dual_fuel_discount_exc_vat": 0,
+      "dual_fuel_discount_inc_vat": 0,
+      "exit_fees_exc_vat": 0,
+      "exit_fees_inc_vat": 0,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/gas-tariffs/G-1R-VAR-17-01-11-N/standing-charges/",
+          "method": "GET",
+          "rel": "standing_charges"
+        },
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/gas-tariffs/G-1R-VAR-17-01-11-N/standard-unit-rates/",
+          "method": "GET",
+          "rel": "standard_unit_rates"
+        }
+      ],
+      "standard_unit_rate_exc_vat": 3.11,
+      "standard_unit_rate_inc_vat": 3.2655
+    }
+  },
+  "_P": {
+    "direct_debit_monthly": {
+      "code": "G-1R-VAR-17-01-11-P",
+      "standing_charge_exc_vat": 16.0,
+      "standing_charge_inc_vat": 16.8,
+      "online_discount_exc_vat": 0,
+      "online_discount_inc_vat": 0,
+      "dual_fuel_discount_exc_vat": 0,
+      "dual_fuel_discount_inc_vat": 0,
+      "exit_fees_exc_vat": 0,
+      "exit_fees_inc_vat": 0,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/gas-tariffs/G-1R-VAR-17-01-11-P/standing-charges/",
+          "method": "GET",
+          "rel": "standing_charges"
+        },
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/gas-tariffs/G-1R-VAR-17-01-11-P/standard-unit-rates/",
+          "method": "GET",
+          "rel": "standard_unit_rates"
+        }
+      ],
+      "standard_unit_rate_exc_vat": 3.1,
+      "standard_unit_rate_inc_vat": 3.255
+    }
+  }
+}

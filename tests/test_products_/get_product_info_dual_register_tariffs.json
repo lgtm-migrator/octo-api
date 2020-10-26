@@ -1,0 +1,478 @@
+{
+  "_A": {
+    "direct_debit_monthly": {
+      "code": "E-2R-VAR-17-01-11-A",
+      "standing_charge_exc_vat": 19.46,
+      "standing_charge_inc_vat": 20.433,
+      "online_discount_exc_vat": 0,
+      "online_discount_inc_vat": 0,
+      "dual_fuel_discount_exc_vat": 0,
+      "dual_fuel_discount_inc_vat": 0,
+      "exit_fees_exc_vat": 0,
+      "exit_fees_inc_vat": 0,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/electricity-tariffs/E-2R-VAR-17-01-11-A/standing-charges/",
+          "method": "GET",
+          "rel": "standing_charges"
+        },
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/electricity-tariffs/E-2R-VAR-17-01-11-A/day-unit-rates/",
+          "method": "GET",
+          "rel": "day_unit_rates"
+        },
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/electricity-tariffs/E-2R-VAR-17-01-11-A/night-unit-rates/",
+          "method": "GET",
+          "rel": "night_unit_rates"
+        }
+      ],
+      "day_unit_rate_exc_vat": 16.65,
+      "day_unit_rate_inc_vat": 17.4825,
+      "night_unit_rate_exc_vat": 8.86,
+      "night_unit_rate_inc_vat": 9.303
+    }
+  },
+  "_B": {
+    "direct_debit_monthly": {
+      "code": "E-2R-VAR-17-01-11-B",
+      "standing_charge_exc_vat": 18.18,
+      "standing_charge_inc_vat": 19.089,
+      "online_discount_exc_vat": 0,
+      "online_discount_inc_vat": 0,
+      "dual_fuel_discount_exc_vat": 0,
+      "dual_fuel_discount_inc_vat": 0,
+      "exit_fees_exc_vat": 0,
+      "exit_fees_inc_vat": 0,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/electricity-tariffs/E-2R-VAR-17-01-11-B/standing-charges/",
+          "method": "GET",
+          "rel": "standing_charges"
+        },
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/electricity-tariffs/E-2R-VAR-17-01-11-B/day-unit-rates/",
+          "method": "GET",
+          "rel": "day_unit_rates"
+        },
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/electricity-tariffs/E-2R-VAR-17-01-11-B/night-unit-rates/",
+          "method": "GET",
+          "rel": "night_unit_rates"
+        }
+      ],
+      "day_unit_rate_exc_vat": 15.92,
+      "day_unit_rate_inc_vat": 16.716,
+      "night_unit_rate_exc_vat": 8.99,
+      "night_unit_rate_inc_vat": 9.4395
+    }
+  },
+  "_C": {
+    "direct_debit_monthly": {
+      "code": "E-2R-VAR-17-01-11-C",
+      "standing_charge_exc_vat": 19.11,
+      "standing_charge_inc_vat": 20.0655,
+      "online_discount_exc_vat": 0,
+      "online_discount_inc_vat": 0,
+      "dual_fuel_discount_exc_vat": 0,
+      "dual_fuel_discount_inc_vat": 0,
+      "exit_fees_exc_vat": 0,
+      "exit_fees_inc_vat": 0,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/electricity-tariffs/E-2R-VAR-17-01-11-C/standing-charges/",
+          "method": "GET",
+          "rel": "standing_charges"
+        },
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/electricity-tariffs/E-2R-VAR-17-01-11-C/day-unit-rates/",
+          "method": "GET",
+          "rel": "day_unit_rates"
+        },
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/electricity-tariffs/E-2R-VAR-17-01-11-C/night-unit-rates/",
+          "method": "GET",
+          "rel": "night_unit_rates"
+        }
+      ],
+      "day_unit_rate_exc_vat": 16.03,
+      "day_unit_rate_inc_vat": 16.8315,
+      "night_unit_rate_exc_vat": 8.99,
+      "night_unit_rate_inc_vat": 9.4395
+    }
+  },
+  "_D": {
+    "direct_debit_monthly": {
+      "code": "E-2R-VAR-17-01-11-D",
+      "standing_charge_exc_vat": 18.61,
+      "standing_charge_inc_vat": 19.5405,
+      "online_discount_exc_vat": 0,
+      "online_discount_inc_vat": 0,
+      "dual_fuel_discount_exc_vat": 0,
+      "dual_fuel_discount_inc_vat": 0,
+      "exit_fees_exc_vat": 0,
+      "exit_fees_inc_vat": 0,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/electricity-tariffs/E-2R-VAR-17-01-11-D/standing-charges/",
+          "method": "GET",
+          "rel": "standing_charges"
+        },
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/electricity-tariffs/E-2R-VAR-17-01-11-D/day-unit-rates/",
+          "method": "GET",
+          "rel": "day_unit_rates"
+        },
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/electricity-tariffs/E-2R-VAR-17-01-11-D/night-unit-rates/",
+          "method": "GET",
+          "rel": "night_unit_rates"
+        }
+      ],
+      "day_unit_rate_exc_vat": 16.96,
+      "day_unit_rate_inc_vat": 17.808,
+      "night_unit_rate_exc_vat": 9.5,
+      "night_unit_rate_inc_vat": 9.975
+    }
+  },
+  "_E": {
+    "direct_debit_monthly": {
+      "code": "E-2R-VAR-17-01-11-E",
+      "standing_charge_exc_vat": 19.19,
+      "standing_charge_inc_vat": 20.1495,
+      "online_discount_exc_vat": 0,
+      "online_discount_inc_vat": 0,
+      "dual_fuel_discount_exc_vat": 0,
+      "dual_fuel_discount_inc_vat": 0,
+      "exit_fees_exc_vat": 0,
+      "exit_fees_inc_vat": 0,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/electricity-tariffs/E-2R-VAR-17-01-11-E/standing-charges/",
+          "method": "GET",
+          "rel": "standing_charges"
+        },
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/electricity-tariffs/E-2R-VAR-17-01-11-E/day-unit-rates/",
+          "method": "GET",
+          "rel": "day_unit_rates"
+        },
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/electricity-tariffs/E-2R-VAR-17-01-11-E/night-unit-rates/",
+          "method": "GET",
+          "rel": "night_unit_rates"
+        }
+      ],
+      "day_unit_rate_exc_vat": 16.27,
+      "day_unit_rate_inc_vat": 17.0835,
+      "night_unit_rate_exc_vat": 8.88,
+      "night_unit_rate_inc_vat": 9.324
+    }
+  },
+  "_F": {
+    "direct_debit_monthly": {
+      "code": "E-2R-VAR-17-01-11-F",
+      "standing_charge_exc_vat": 20.35,
+      "standing_charge_inc_vat": 21.3675,
+      "online_discount_exc_vat": 0,
+      "online_discount_inc_vat": 0,
+      "dual_fuel_discount_exc_vat": 0,
+      "dual_fuel_discount_inc_vat": 0,
+      "exit_fees_exc_vat": 0,
+      "exit_fees_inc_vat": 0,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/electricity-tariffs/E-2R-VAR-17-01-11-F/standing-charges/",
+          "method": "GET",
+          "rel": "standing_charges"
+        },
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/electricity-tariffs/E-2R-VAR-17-01-11-F/day-unit-rates/",
+          "method": "GET",
+          "rel": "day_unit_rates"
+        },
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/electricity-tariffs/E-2R-VAR-17-01-11-F/night-unit-rates/",
+          "method": "GET",
+          "rel": "night_unit_rates"
+        }
+      ],
+      "day_unit_rate_exc_vat": 16.17,
+      "day_unit_rate_inc_vat": 16.9785,
+      "night_unit_rate_exc_vat": 9.2,
+      "night_unit_rate_inc_vat": 9.66
+    }
+  },
+  "_G": {
+    "direct_debit_monthly": {
+      "code": "E-2R-VAR-17-01-11-G",
+      "standing_charge_exc_vat": 18.3,
+      "standing_charge_inc_vat": 19.215,
+      "online_discount_exc_vat": 0,
+      "online_discount_inc_vat": 0,
+      "dual_fuel_discount_exc_vat": 0,
+      "dual_fuel_discount_inc_vat": 0,
+      "exit_fees_exc_vat": 0,
+      "exit_fees_inc_vat": 0,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/electricity-tariffs/E-2R-VAR-17-01-11-G/standing-charges/",
+          "method": "GET",
+          "rel": "standing_charges"
+        },
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/electricity-tariffs/E-2R-VAR-17-01-11-G/day-unit-rates/",
+          "method": "GET",
+          "rel": "day_unit_rates"
+        },
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/electricity-tariffs/E-2R-VAR-17-01-11-G/night-unit-rates/",
+          "method": "GET",
+          "rel": "night_unit_rates"
+        }
+      ],
+      "day_unit_rate_exc_vat": 16.51,
+      "day_unit_rate_inc_vat": 17.3355,
+      "night_unit_rate_exc_vat": 9.17,
+      "night_unit_rate_inc_vat": 9.6285
+    }
+  },
+  "_H": {
+    "direct_debit_monthly": {
+      "code": "E-2R-VAR-17-01-11-H",
+      "standing_charge_exc_vat": 17.91,
+      "standing_charge_inc_vat": 18.8055,
+      "online_discount_exc_vat": 0,
+      "online_discount_inc_vat": 0,
+      "dual_fuel_discount_exc_vat": 0,
+      "dual_fuel_discount_inc_vat": 0,
+      "exit_fees_exc_vat": 0,
+      "exit_fees_inc_vat": 0,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/electricity-tariffs/E-2R-VAR-17-01-11-H/standing-charges/",
+          "method": "GET",
+          "rel": "standing_charges"
+        },
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/electricity-tariffs/E-2R-VAR-17-01-11-H/day-unit-rates/",
+          "method": "GET",
+          "rel": "day_unit_rates"
+        },
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/electricity-tariffs/E-2R-VAR-17-01-11-H/night-unit-rates/",
+          "method": "GET",
+          "rel": "night_unit_rates"
+        }
+      ],
+      "day_unit_rate_exc_vat": 16.17,
+      "day_unit_rate_inc_vat": 16.9785,
+      "night_unit_rate_exc_vat": 9.42,
+      "night_unit_rate_inc_vat": 9.891
+    }
+  },
+  "_J": {
+    "direct_debit_monthly": {
+      "code": "E-2R-VAR-17-01-11-J",
+      "standing_charge_exc_vat": 19.4,
+      "standing_charge_inc_vat": 20.37,
+      "online_discount_exc_vat": 0,
+      "online_discount_inc_vat": 0,
+      "dual_fuel_discount_exc_vat": 0,
+      "dual_fuel_discount_inc_vat": 0,
+      "exit_fees_exc_vat": 0,
+      "exit_fees_inc_vat": 0,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/electricity-tariffs/E-2R-VAR-17-01-11-J/standing-charges/",
+          "method": "GET",
+          "rel": "standing_charges"
+        },
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/electricity-tariffs/E-2R-VAR-17-01-11-J/day-unit-rates/",
+          "method": "GET",
+          "rel": "day_unit_rates"
+        },
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/electricity-tariffs/E-2R-VAR-17-01-11-J/night-unit-rates/",
+          "method": "GET",
+          "rel": "night_unit_rates"
+        }
+      ],
+      "day_unit_rate_exc_vat": 16.9,
+      "day_unit_rate_inc_vat": 17.745,
+      "night_unit_rate_exc_vat": 9.19,
+      "night_unit_rate_inc_vat": 9.6495
+    }
+  },
+  "_K": {
+    "direct_debit_monthly": {
+      "code": "E-2R-VAR-17-01-11-K",
+      "standing_charge_exc_vat": 19.45,
+      "standing_charge_inc_vat": 20.4225,
+      "online_discount_exc_vat": 0,
+      "online_discount_inc_vat": 0,
+      "dual_fuel_discount_exc_vat": 0,
+      "dual_fuel_discount_inc_vat": 0,
+      "exit_fees_exc_vat": 0,
+      "exit_fees_inc_vat": 0,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/electricity-tariffs/E-2R-VAR-17-01-11-K/standing-charges/",
+          "method": "GET",
+          "rel": "standing_charges"
+        },
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/electricity-tariffs/E-2R-VAR-17-01-11-K/day-unit-rates/",
+          "method": "GET",
+          "rel": "day_unit_rates"
+        },
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/electricity-tariffs/E-2R-VAR-17-01-11-K/night-unit-rates/",
+          "method": "GET",
+          "rel": "night_unit_rates"
+        }
+      ],
+      "day_unit_rate_exc_vat": 16.41,
+      "day_unit_rate_inc_vat": 17.2305,
+      "night_unit_rate_exc_vat": 9.28,
+      "night_unit_rate_inc_vat": 9.744
+    }
+  },
+  "_L": {
+    "direct_debit_monthly": {
+      "code": "E-2R-VAR-17-01-11-L",
+      "standing_charge_exc_vat": 20.13,
+      "standing_charge_inc_vat": 21.1365,
+      "online_discount_exc_vat": 0,
+      "online_discount_inc_vat": 0,
+      "dual_fuel_discount_exc_vat": 0,
+      "dual_fuel_discount_inc_vat": 0,
+      "exit_fees_exc_vat": 0,
+      "exit_fees_inc_vat": 0,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/electricity-tariffs/E-2R-VAR-17-01-11-L/standing-charges/",
+          "method": "GET",
+          "rel": "standing_charges"
+        },
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/electricity-tariffs/E-2R-VAR-17-01-11-L/day-unit-rates/",
+          "method": "GET",
+          "rel": "day_unit_rates"
+        },
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/electricity-tariffs/E-2R-VAR-17-01-11-L/night-unit-rates/",
+          "method": "GET",
+          "rel": "night_unit_rates"
+        }
+      ],
+      "day_unit_rate_exc_vat": 17.18,
+      "day_unit_rate_inc_vat": 18.039,
+      "night_unit_rate_exc_vat": 8.93,
+      "night_unit_rate_inc_vat": 9.3765
+    }
+  },
+  "_M": {
+    "direct_debit_monthly": {
+      "code": "E-2R-VAR-17-01-11-M",
+      "standing_charge_exc_vat": 20.25,
+      "standing_charge_inc_vat": 21.2625,
+      "online_discount_exc_vat": 0,
+      "online_discount_inc_vat": 0,
+      "dual_fuel_discount_exc_vat": 0,
+      "dual_fuel_discount_inc_vat": 0,
+      "exit_fees_exc_vat": 0,
+      "exit_fees_inc_vat": 0,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/electricity-tariffs/E-2R-VAR-17-01-11-M/standing-charges/",
+          "method": "GET",
+          "rel": "standing_charges"
+        },
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/electricity-tariffs/E-2R-VAR-17-01-11-M/day-unit-rates/",
+          "method": "GET",
+          "rel": "day_unit_rates"
+        },
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/electricity-tariffs/E-2R-VAR-17-01-11-M/night-unit-rates/",
+          "method": "GET",
+          "rel": "night_unit_rates"
+        }
+      ],
+      "day_unit_rate_exc_vat": 16.04,
+      "day_unit_rate_inc_vat": 16.842,
+      "night_unit_rate_exc_vat": 9.07,
+      "night_unit_rate_inc_vat": 9.5235
+    }
+  },
+  "_N": {
+    "direct_debit_monthly": {
+      "code": "E-2R-VAR-17-01-11-N",
+      "standing_charge_exc_vat": 19.9,
+      "standing_charge_inc_vat": 20.895,
+      "online_discount_exc_vat": 0,
+      "online_discount_inc_vat": 0,
+      "dual_fuel_discount_exc_vat": 0,
+      "dual_fuel_discount_inc_vat": 0,
+      "exit_fees_exc_vat": 0,
+      "exit_fees_inc_vat": 0,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/electricity-tariffs/E-2R-VAR-17-01-11-N/standing-charges/",
+          "method": "GET",
+          "rel": "standing_charges"
+        },
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/electricity-tariffs/E-2R-VAR-17-01-11-N/day-unit-rates/",
+          "method": "GET",
+          "rel": "day_unit_rates"
+        },
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/electricity-tariffs/E-2R-VAR-17-01-11-N/night-unit-rates/",
+          "method": "GET",
+          "rel": "night_unit_rates"
+        }
+      ],
+      "day_unit_rate_exc_vat": 15.84,
+      "day_unit_rate_inc_vat": 16.632,
+      "night_unit_rate_exc_vat": 9.31,
+      "night_unit_rate_inc_vat": 9.7755
+    }
+  },
+  "_P": {
+    "direct_debit_monthly": {
+      "code": "E-2R-VAR-17-01-11-P",
+      "standing_charge_exc_vat": 22.61,
+      "standing_charge_inc_vat": 23.7405,
+      "online_discount_exc_vat": 0,
+      "online_discount_inc_vat": 0,
+      "dual_fuel_discount_exc_vat": 0,
+      "dual_fuel_discount_inc_vat": 0,
+      "exit_fees_exc_vat": 0,
+      "exit_fees_inc_vat": 0,
+      "links": [
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/electricity-tariffs/E-2R-VAR-17-01-11-P/standing-charges/",
+          "method": "GET",
+          "rel": "standing_charges"
+        },
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/electricity-tariffs/E-2R-VAR-17-01-11-P/day-unit-rates/",
+          "method": "GET",
+          "rel": "day_unit_rates"
+        },
+        {
+          "href": "https://api.octopus.energy/v1/products/VAR-17-01-11/electricity-tariffs/E-2R-VAR-17-01-11-P/night-unit-rates/",
+          "method": "GET",
+          "rel": "night_unit_rates"
+        }
+      ],
+      "day_unit_rate_exc_vat": 16.99,
+      "day_unit_rate_inc_vat": 17.8395,
+      "night_unit_rate_exc_vat": 10.84,
+      "night_unit_rate_inc_vat": 11.382
+    }
+  }
+}

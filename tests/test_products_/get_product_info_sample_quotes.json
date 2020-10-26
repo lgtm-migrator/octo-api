@@ -1,0 +1,282 @@
+{
+  "_A": {
+    "direct_debit_monthly": {
+      "electricity_single_rate": {
+        "annual_cost_inc_vat": 52080,
+        "annual_cost_exc_vat": 49600
+      },
+      "electricity_dual_rate": {
+        "annual_cost_inc_vat": 66456,
+        "annual_cost_exc_vat": 63291
+      },
+      "dual_fuel_single_rate": {
+        "annual_cost_inc_vat": 96642,
+        "annual_cost_exc_vat": 92040
+      },
+      "dual_fuel_dual_rate": {
+        "annual_cost_inc_vat": 111018,
+        "annual_cost_exc_vat": 105731
+      }
+    }
+  },
+  "_B": {
+    "direct_debit_monthly": {
+      "electricity_single_rate": {
+        "annual_cost_inc_vat": 49823,
+        "annual_cost_exc_vat": 47451
+      },
+      "electricity_dual_rate": {
+        "annual_cost_inc_vat": 64339,
+        "annual_cost_exc_vat": 61275
+      },
+      "dual_fuel_single_rate": {
+        "annual_cost_inc_vat": 94511,
+        "annual_cost_exc_vat": 90011
+      },
+      "dual_fuel_dual_rate": {
+        "annual_cost_inc_vat": 109027,
+        "annual_cost_exc_vat": 103835
+      }
+    }
+  },
+  "_C": {
+    "direct_debit_monthly": {
+      "electricity_single_rate": {
+        "annual_cost_inc_vat": 50149,
+        "annual_cost_exc_vat": 47761
+      },
+      "electricity_dual_rate": {
+        "annual_cost_inc_vat": 64977,
+        "annual_cost_exc_vat": 61883
+      },
+      "dual_fuel_single_rate": {
+        "annual_cost_inc_vat": 97861,
+        "annual_cost_exc_vat": 93201
+      },
+      "dual_fuel_dual_rate": {
+        "annual_cost_inc_vat": 112689,
+        "annual_cost_exc_vat": 107323
+      }
+    }
+  },
+  "_D": {
+    "direct_debit_monthly": {
+      "electricity_single_rate": {
+        "annual_cost_inc_vat": 53307,
+        "annual_cost_exc_vat": 50769
+      },
+      "electricity_dual_rate": {
+        "annual_cost_inc_vat": 68108,
+        "annual_cost_exc_vat": 64865
+      },
+      "dual_fuel_single_rate": {
+        "annual_cost_inc_vat": 100515,
+        "annual_cost_exc_vat": 95729
+      },
+      "dual_fuel_dual_rate": {
+        "annual_cost_inc_vat": 115316,
+        "annual_cost_exc_vat": 109825
+      }
+    }
+  },
+  "_E": {
+    "direct_debit_monthly": {
+      "electricity_single_rate": {
+        "annual_cost_inc_vat": 50758,
+        "annual_cost_exc_vat": 48341
+      },
+      "electricity_dual_rate": {
+        "annual_cost_inc_vat": 65418,
+        "annual_cost_exc_vat": 62302
+      },
+      "dual_fuel_single_rate": {
+        "annual_cost_inc_vat": 96580,
+        "annual_cost_exc_vat": 91981
+      },
+      "dual_fuel_dual_rate": {
+        "annual_cost_inc_vat": 111240,
+        "annual_cost_exc_vat": 105942
+      }
+    }
+  },
+  "_F": {
+    "direct_debit_monthly": {
+      "electricity_single_rate": {
+        "annual_cost_inc_vat": 51112,
+        "annual_cost_exc_vat": 48678
+      },
+      "electricity_dual_rate": {
+        "annual_cost_inc_vat": 66199,
+        "annual_cost_exc_vat": 63047
+      },
+      "dual_fuel_single_rate": {
+        "annual_cost_inc_vat": 96304,
+        "annual_cost_exc_vat": 91718
+      },
+      "dual_fuel_dual_rate": {
+        "annual_cost_inc_vat": 111391,
+        "annual_cost_exc_vat": 106087
+      }
+    }
+  },
+  "_G": {
+    "direct_debit_monthly": {
+      "electricity_single_rate": {
+        "annual_cost_inc_vat": 51148,
+        "annual_cost_exc_vat": 48712
+      },
+      "electricity_dual_rate": {
+        "annual_cost_inc_vat": 66227,
+        "annual_cost_exc_vat": 63074
+      },
+      "dual_fuel_single_rate": {
+        "annual_cost_inc_vat": 97222,
+        "annual_cost_exc_vat": 92592
+      },
+      "dual_fuel_dual_rate": {
+        "annual_cost_inc_vat": 112301,
+        "annual_cost_exc_vat": 106954
+      }
+    }
+  },
+  "_H": {
+    "direct_debit_monthly": {
+      "electricity_single_rate": {
+        "annual_cost_inc_vat": 50542,
+        "annual_cost_exc_vat": 48135
+      },
+      "electricity_dual_rate": {
+        "annual_cost_inc_vat": 65671,
+        "annual_cost_exc_vat": 62544
+      },
+      "dual_fuel_single_rate": {
+        "annual_cost_inc_vat": 98758,
+        "annual_cost_exc_vat": 94055
+      },
+      "dual_fuel_dual_rate": {
+        "annual_cost_inc_vat": 113887,
+        "annual_cost_exc_vat": 108464
+      }
+    }
+  },
+  "_J": {
+    "direct_debit_monthly": {
+      "electricity_single_rate": {
+        "annual_cost_inc_vat": 52849,
+        "annual_cost_exc_vat": 50332
+      },
+      "electricity_dual_rate": {
+        "annual_cost_inc_vat": 67684,
+        "annual_cost_exc_vat": 64461
+      },
+      "dual_fuel_single_rate": {
+        "annual_cost_inc_vat": 100309,
+        "annual_cost_exc_vat": 95532
+      },
+      "dual_fuel_dual_rate": {
+        "annual_cost_inc_vat": 115144,
+        "annual_cost_exc_vat": 109661
+      }
+    }
+  },
+  "_K": {
+    "direct_debit_monthly": {
+      "electricity_single_rate": {
+        "annual_cost_inc_vat": 52320,
+        "annual_cost_exc_vat": 49828
+      },
+      "electricity_dual_rate": {
+        "annual_cost_inc_vat": 66616,
+        "annual_cost_exc_vat": 63444
+      },
+      "dual_fuel_single_rate": {
+        "annual_cost_inc_vat": 98268,
+        "annual_cost_exc_vat": 93588
+      },
+      "dual_fuel_dual_rate": {
+        "annual_cost_inc_vat": 112564,
+        "annual_cost_exc_vat": 107204
+      }
+    }
+  },
+  "_L": {
+    "direct_debit_monthly": {
+      "electricity_single_rate": {
+        "annual_cost_inc_vat": 53037,
+        "annual_cost_exc_vat": 50511
+      },
+      "electricity_dual_rate": {
+        "annual_cost_inc_vat": 68198,
+        "annual_cost_exc_vat": 64950
+      },
+      "dual_fuel_single_rate": {
+        "annual_cost_inc_vat": 101631,
+        "annual_cost_exc_vat": 96791
+      },
+      "dual_fuel_dual_rate": {
+        "annual_cost_inc_vat": 116792,
+        "annual_cost_exc_vat": 111230
+      }
+    }
+  },
+  "_M": {
+    "direct_debit_monthly": {
+      "electricity_single_rate": {
+        "annual_cost_inc_vat": 50403,
+        "annual_cost_exc_vat": 48003
+      },
+      "electricity_dual_rate": {
+        "annual_cost_inc_vat": 65587,
+        "annual_cost_exc_vat": 62464
+      },
+      "dual_fuel_single_rate": {
+        "annual_cost_inc_vat": 95847,
+        "annual_cost_exc_vat": 91283
+      },
+      "dual_fuel_dual_rate": {
+        "annual_cost_inc_vat": 111031,
+        "annual_cost_exc_vat": 105744
+      }
+    }
+  },
+  "_N": {
+    "direct_debit_monthly": {
+      "electricity_single_rate": {
+        "annual_cost_inc_vat": 51000,
+        "annual_cost_exc_vat": 48572
+      },
+      "electricity_dual_rate": {
+        "annual_cost_inc_vat": 65386,
+        "annual_cost_exc_vat": 62273
+      },
+      "dual_fuel_single_rate": {
+        "annual_cost_inc_vat": 96318,
+        "annual_cost_exc_vat": 91732
+      },
+      "dual_fuel_dual_rate": {
+        "annual_cost_inc_vat": 110704,
+        "annual_cost_exc_vat": 105433
+      }
+    }
+  },
+  "_P": {
+    "direct_debit_monthly": {
+      "electricity_single_rate": {
+        "annual_cost_inc_vat": 53500,
+        "annual_cost_exc_vat": 50953
+      },
+      "electricity_dual_rate": {
+        "annual_cost_inc_vat": 72200,
+        "annual_cost_exc_vat": 68762
+      },
+      "dual_fuel_single_rate": {
+        "annual_cost_inc_vat": 98692,
+        "annual_cost_exc_vat": 93993
+      },
+      "dual_fuel_dual_rate": {
+        "annual_cost_inc_vat": 117392,
+        "annual_cost_exc_vat": 111802
+      }
+    }
+  }
+}
