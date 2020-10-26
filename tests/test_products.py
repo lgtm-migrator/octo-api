@@ -64,16 +64,25 @@ def test_get_products(api: OctoAPI):
 
 
 def test_get_product_info(api, datadir):
-	dual_register_electricity_tariffs = json.loads((datadir / "get_product_info_dual_register_tariffs.json").read_text())
-	single_register_gas_tariffs = json.loads((datadir / "get_product_info_single_register_gas_tariffs.json").read_text())
+	dual_register_electricity_tariffs = json.loads(
+			(datadir / "get_product_info_dual_register_tariffs.json").read_text()
+			)
+	single_register_gas_tariffs = json.loads(
+			(datadir / "get_product_info_single_register_gas_tariffs.json").read_text()
+			)
 	sample_quotes = json.loads((datadir / "get_product_info_sample_quotes.json").read_text())
-	single_register_electricity_tariffs = json.loads((datadir / "single_register_electricity_tariffs.json").read_text())
+	single_register_electricity_tariffs = json.loads(
+			(datadir / "single_register_electricity_tariffs.json").read_text()
+			)
 
 	product = DetailedProduct(
 			code="VAR-17-01-11",
 			full_name="Flexible Octopus January 2017 v1",
 			display_name="Flexible Octopus",
-			description="This variable tariff always offers great value - driven by our belief that prices should be fair for the long term, not just a fixed term. We aim for 50% renewable electricity on this tariff.",
+			description="This variable tariff always offers great value - "
+			"driven by our belief that prices should be fair "
+			"for the long term, not just a fixed term. "
+			"We aim for 50% renewable electricity on this tariff.",
 			is_variable=True,
 			is_green=False,
 			is_tracker=False,
@@ -107,13 +116,15 @@ def test_get_product_info(api, datadir):
 
 
 def test_parse_tariffs(file_regression: FileRegressionFixture, datadir):
-	single_register_electricity_tariffs = json.loads((datadir / "single_register_electricity_tariffs.json").read_text())
+	single_register_electricity_tariffs = json.loads(
+			(datadir / "single_register_electricity_tariffs.json").read_text()
+			)
 
 	assert isinstance(_parse_tariffs(single_register_electricity_tariffs), RegionalTariffs)
 	assert str(_parse_tariffs(single_register_electricity_tariffs)) == "RegionalTariffs(['direct_debit_monthly'])"
 
 	file_regression.check(
-			repr(_parse_tariffs(single_register_electricity_tariffs)), encoding="UTF-8", extension=".json"
+			repr(_parse_tariffs(single_register_electricity_tariffs)), encoding="UTF-8", extension=".json5"
 			)
 
 	tariffs: Dict[str, Dict[str, Tariff]] = {}
