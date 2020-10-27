@@ -137,5 +137,3 @@ autodoc_default_options = {
 		"show-inheritance": None,
 		'exclude-members': ','.join(autodoc_exclude_members),
 		}
-
-overloads_location = "bottom"
