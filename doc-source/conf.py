@@ -104,6 +104,7 @@ toctree_plus_types = {
 		"protocol",
 		"typeddict",
 		"namedtuple",
+		"exception",
 		}
 
 add_module_names = False
