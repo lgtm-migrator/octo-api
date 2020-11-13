@@ -35,3 +35,4 @@ classifiers:
 additional_ignore:
  - 7_nov_2020.py
  - 24_oct_2020.py
+ - demo.py

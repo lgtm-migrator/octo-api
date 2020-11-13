@@ -54,11 +54,10 @@ if sys.version_info[:2] < (3, 7):
 	from backports.datetime_fromisoformat import MonkeyPatch  # nodep
 	MonkeyPatch.patch_fromisoformat()
 
-#
 # def format_datetime(dt: datetime) -> str:
 # 	"""
 # 	Format a :class:`datetime.datetime` object to a string in
-# 	`ISO 8601 <https://en.wikipedia.org/wiki/ISO_8601>`_ format.
+# 	:wikipedia:`ISO 8601` format.
 #
 # 	:param dt:
 # 	"""
