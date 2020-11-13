@@ -48,10 +48,10 @@ def api(httpserver: HTTPServer):
 
 	def respond(url, **params):
 
-		query_params = "&".join(
+		query_params = '&'.join(
 				f"{name}={quote(str(value)).replace('%20', '+')}" for name, value in params.items()
 				)
-		if not url.endswith("/"):
+		if not url.endswith('/'):
 			url = f"{url}/"
 
 		def deco(f: Callable) -> Callable:
@@ -175,4 +175,4 @@ def api(httpserver: HTTPServer):
 @pytest.fixture()
 def original_datadir(request):
 	# Work around pycharm confusing datadir with test file.
-	return pathlib.Path(os.path.splitext(request.module.__file__)[0] + "_")
+	return pathlib.Path(os.path.splitext(request.module.__file__)[0] + '_')

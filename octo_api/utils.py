@@ -51,7 +51,7 @@ from datetime import datetime, timedelta, timezone
 
 if sys.version_info[:2] < (3, 7):
 	# 3rd party
-	from backports.datetime_fromisoformat import MonkeyPatch
+	from backports.datetime_fromisoformat import MonkeyPatch  # nodep
 	MonkeyPatch.patch_fromisoformat()
 
 #
@@ -82,7 +82,7 @@ def from_iso_zulu(the_datetime: Union[str, datetime, None]) -> Optional[datetime
 		return the_datetime
 	else:
 		return datetime.fromisoformat(  # type: ignore
-				the_datetime.replace("Z", "+00:00"),
+				the_datetime.replace('Z', "+00:00"),
 				)
 
 
