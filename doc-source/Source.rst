@@ -3,7 +3,7 @@ Downloading source code
 =========================
 
 The ``octo-api`` source code is available on GitHub,
-and can be accessed from the following URL: https://github.com/domdfcoding/octo-api"
+and can be accessed from the following URL: https://github.com/domdfcoding/octo-api
 
 If you have ``git`` installed, you can clone the repository with the following command:
 
