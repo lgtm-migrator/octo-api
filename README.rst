@@ -35,7 +35,7 @@ octo-api
 	:alt: Docs Check Status
 
 .. |travis| image:: https://github.com/domdfcoding/octo-api/workflows/Linux%20Tests/badge.svg
-	:target: https://github.com/domdfcoding/octo-api/actions?query=workflow%3A%Linux+Tests%22
+	:target: https://github.com/domdfcoding/octo-api/actions?query=workflow%3A%22Linux+Tests%22
 	:alt: Linux Test Status
 
 .. |actions_windows| image:: https://github.com/domdfcoding/octo-api/workflows/Windows%20Tests/badge.svg
