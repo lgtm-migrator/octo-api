@@ -336,9 +336,9 @@ class OctoAPI:
 		:param mpan: The electricity meter-point's MPAN or gas meter-point's MPRN.
 		:param serial_number: The meter's serial number.
 		:param fuel:
-		:param period_from: Show consumption from the given datetime (inclusive).
+		:param period_from: Show consumption for periods which start at or after the given datetime.
 			This parameter can be provided on its own.
-		:param period_to: Show consumption to the given datetime (exclusive).
+		:param period_to: Show consumption for periods which start at or before the given datetime.
 			This parameter also requires providing the ``period_from`` parameter to create a range.
 		:param page_size: Page size of returned results.
 			Default is ``100``, maximum is ``25,000`` to give a full year of half-hourly consumption details.
