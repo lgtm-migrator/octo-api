@@ -50,7 +50,7 @@ class OctoResponse(TypedDict):
 	#: The total number of responses.
 	count: int
 	#: The URL of the next page of results.
-	next: str  # noqa: A003
+	next: str  # noqa: A003  # pylint: disable=redefined-builtin
 	#: The URL of the previous page of results.
 	previous: str
 	#: The current page of results.
