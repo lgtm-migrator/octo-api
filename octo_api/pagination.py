@@ -177,12 +177,10 @@ class PaginatedResponse(Iterable[_T]):
 		return self._count
 
 	@overload
-	def __getitem__(self, item: int) -> _T:
-		...  # pragma: no cover
+	def __getitem__(self, item: int) -> _T: ...  # pragma: no cover
 
 	@overload
-	def __getitem__(self, item: slice) -> List[_T]:
-		...  # pragma: no cover
+	def __getitem__(self, item: slice) -> List[_T]: ...  # pragma: no cover
 
 	def __getitem__(self, item: Union[int, slice]) -> Union[_T, List[_T]]:
 		"""
