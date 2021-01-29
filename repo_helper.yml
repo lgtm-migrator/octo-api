@@ -39,3 +39,5 @@ additional_ignore:
  - gsp_data.py
  - car.py
  - carv2.py
+
+min_coverage: 95
