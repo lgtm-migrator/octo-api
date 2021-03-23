@@ -10,6 +10,7 @@ license: 'MIT'
 short_desc: 'Python interface to the Octopus Energy API.'
 
 enable_conda: False
+min_coverage: 95
 
 extra_sphinx_extensions:
   - attr_utils.autoattrs
@@ -25,7 +26,6 @@ python_versions:
 manifest_additional:
   - demo.py
 
-
 classifiers:
  - 'Development Status :: 4 - Beta'
  - 'Intended Audience :: Developers'
@@ -40,4 +40,5 @@ additional_ignore:
  - car.py
  - carv2.py
 
-min_coverage: 95
+tox_unmanaged:
+ - pytest
