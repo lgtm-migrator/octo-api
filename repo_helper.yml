@@ -9,7 +9,8 @@ version: '0.1.0'
 license: 'MIT'
 short_desc: 'Python interface to the Octopus Energy API.'
 
-enable_conda: False
+use_whey: true
+enable_conda: false
 min_coverage: 95
 
 extra_sphinx_extensions:
