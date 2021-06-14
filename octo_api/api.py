@@ -35,11 +35,10 @@ The primary interface to the Octopus Energy API.
 
 # stdlib
 from datetime import datetime
-from typing import Any, Dict, Mapping, MutableMapping, Optional, Union
+from typing import Any, Dict, MutableMapping, Optional, Union
 
 # 3rd party
-from apeye.url import SlumberURL
-#: Base URL for the Octopus Energy REST API v1.
+from apeye.slumber_url import SlumberURL
 from domdf_python_tools.secrets import Secret
 from typing_extensions import Literal
 

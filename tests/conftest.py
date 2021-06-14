@@ -7,7 +7,7 @@ from urllib.parse import quote
 
 # 3rd party
 import pytest
-from apeye.url import SlumberURL
+from apeye.slumber_url import SlumberURL
 from pytest_httpserver import HTTPServer  # type: ignore
 from pytest_httpserver.pytest_plugin import Plugin, PluginHTTPServer, get_httpserver_listen_address  # type: ignore
 
