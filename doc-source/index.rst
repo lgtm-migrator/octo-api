@@ -5,6 +5,7 @@ octo-api
 .. start short_desc
 
 .. documentation-summary::
+	:meta:
 
 .. end short_desc
 
@@ -25,7 +26,7 @@ octo-api
 		* - Activity
 		  - |commits-latest| |commits-since| |maintained| |pypi-downloads|
 		* - QA
-		  - |codefactor| |actions_flake8| |actions_mypy| |pre_commit_ci|
+		  - |codefactor| |actions_flake8| |actions_mypy|
 		* - Other
 		  - |license| |language| |requires|
 
@@ -110,9 +111,6 @@ octo-api
 		:downloads: month
 		:alt: PyPI - Downloads
 
-	.. |pre_commit_ci| pre-commit-ci-shield::
-		:alt: pre-commit.ci status
-
 .. end shields
 
 Installation
@@ -145,13 +143,19 @@ Installation
 	contributing
 	Source
 
+.. sidebar-links::
+	:caption: Links
+	:github:
+	:pypi: octo-api
+
+
 .. start links
 
 .. only:: html
 
 	View the :ref:`Function Index <genindex>` or browse the `Source Code <_modules/index.html>`__.
 
-	`Browse the GitHub Repository <https://github.com/domdfcoding/octo-api>`__
+	:github:repo:`Browse the GitHub Repository <domdfcoding/octo-api>`
 
 .. end links
 
