@@ -31,6 +31,9 @@ classifiers:
  - 'Intended Audience :: Developers'
  - 'Topic :: Software Development :: Libraries :: Python Modules'
 
+keywords:
+ - electricity
+
 additional_ignore:
  - 7_nov_2020.py
  - 24_oct_2020.py
