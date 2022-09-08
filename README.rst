@@ -56,8 +56,8 @@ octo-api
 	:target: https://github.com/domdfcoding/octo-api/actions?query=workflow%3A%22mypy%22
 	:alt: mypy status
 
-.. |requires| image:: https://requires.io/github/domdfcoding/octo-api/requirements.svg?branch=master
-	:target: https://requires.io/github/domdfcoding/octo-api/requirements/?branch=master
+.. |requires| image:: https://dependency-dash.repo-helper.uk/github/domdfcoding/octo-api/badge.svg
+	:target: https://dependency-dash.repo-helper.uk/github/domdfcoding/octo-api/
 	:alt: Requirements Status
 
 .. |coveralls| image:: https://img.shields.io/coveralls/github/domdfcoding/octo-api/master?logo=coveralls
@@ -99,7 +99,7 @@ octo-api
 	:target: https://github.com/domdfcoding/octo-api/commit/master
 	:alt: GitHub last commit
 
-.. |maintained| image:: https://img.shields.io/maintenance/yes/2021
+.. |maintained| image:: https://img.shields.io/maintenance/yes/2022
 	:alt: Maintenance
 
 .. |pypi-downloads| image:: https://img.shields.io/pypi/dm/octo-api

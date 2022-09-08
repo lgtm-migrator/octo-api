@@ -58,7 +58,8 @@ octo-api
 		:workflow: mypy
 		:alt: mypy status
 
-	.. |requires| requires-io-shield::
+	.. |requires| image:: https://dependency-dash.repo-helper.uk/github/domdfcoding/octo-api/badge.svg
+		:target: https://dependency-dash.repo-helper.uk/github/domdfcoding/octo-api/
 		:alt: Requirements Status
 
 	.. |coveralls| coveralls-shield::
@@ -103,7 +104,7 @@ octo-api
 		:last-commit:
 		:alt: GitHub last commit
 
-	.. |maintained| maintained-shield:: 2021
+	.. |maintained| maintained-shield:: 2022
 		:alt: Maintenance
 
 	.. |pypi-downloads| pypi-shield::
