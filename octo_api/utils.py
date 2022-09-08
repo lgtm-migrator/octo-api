@@ -51,7 +51,7 @@ from datetime import datetime, timedelta, timezone
 
 if sys.version_info[:2] < (3, 7):
 	# 3rd party
-	from backports.datetime_fromisoformat import MonkeyPatch  # nodep
+	from backports.datetime_fromisoformat import MonkeyPatch  # type: ignore[import]  # nodep
 	MonkeyPatch.patch_fromisoformat()
 
 # def format_datetime(dt: datetime) -> str:

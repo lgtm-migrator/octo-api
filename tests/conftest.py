@@ -8,8 +8,8 @@ from urllib.parse import quote
 # 3rd party
 import pytest
 from apeye.slumber_url import SlumberURL
-from pytest_httpserver import HTTPServer  # type: ignore
-from pytest_httpserver.pytest_plugin import Plugin, PluginHTTPServer, get_httpserver_listen_address  # type: ignore
+from pytest_httpserver import HTTPServer
+from pytest_httpserver.pytest_plugin import Plugin, PluginHTTPServer, get_httpserver_listen_address
 
 # this package
 import octo_api.api
@@ -44,6 +44,7 @@ responses = pathlib.Path(__file__).parent / "responses"
 @pytest.fixture(scope="session")
 def api(httpserver: HTTPServer):
 	a = octo_api.api.OctoAPI("token")
+	assert a.API_KEY is not None
 	assert a.API_KEY.value == "token"
 
 	def respond(url, **params):

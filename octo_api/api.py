@@ -71,10 +71,10 @@ class OctoAPI:
 
 	def get_products(
 			self,
-			is_variable: bool = None,
-			is_green: bool = None,
-			is_tracker: bool = None,
-			is_prepay: bool = None,
+			is_variable: Optional[bool] = None,
+			is_green: Optional[bool] = None,
+			is_tracker: Optional[bool] = None,
+			is_prepay: Optional[bool] = None,
 			is_business: bool = False,
 			available_at: Optional[datetime] = None,
 			) -> PaginatedResponse[Product]:
