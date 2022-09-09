@@ -14,6 +14,8 @@ from pytest_httpserver.pytest_plugin import Plugin, PluginHTTPServer, get_httpse
 # this package
 import octo_api.api
 
+pytest_plugins = ("coincidence", )
+
 
 @pytest.fixture(scope="session")
 def httpserver_listen_address() -> Tuple[str, int]:
