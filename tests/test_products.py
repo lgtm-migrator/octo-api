@@ -3,7 +3,7 @@ import json
 from typing import Dict
 
 # 3rd party
-from pytest_regressions.file_regression import FileRegressionFixture
+from coincidence.regressions import AdvancedFileRegressionFixture
 
 # this package
 from octo_api.api import OctoAPI
@@ -63,7 +63,7 @@ def test_get_products(api: OctoAPI):
 	assert not api.get_products(is_prepay=True, is_variable=False)
 
 
-def test_get_product_info(api, datadir):
+def test_get_product_info(api: OctoAPI, datadir):  # noqa: MAN001
 	dual_register_electricity_tariffs = json.loads(
 			(datadir / "get_product_info_dual_register_tariffs.json").read_text()
 			)
@@ -115,7 +115,7 @@ def test_get_product_info(api, datadir):
 	assert api.get_product_info("VAR-17-01-11") == product
 
 
-def test_parse_tariffs(file_regression: FileRegressionFixture, datadir):
+def test_parse_tariffs(advanced_file_regression: AdvancedFileRegressionFixture, datadir):  # noqa: MAN001
 	single_register_electricity_tariffs = json.loads(
 			(datadir / "single_register_electricity_tariffs.json").read_text()
 			)
@@ -123,8 +123,9 @@ def test_parse_tariffs(file_regression: FileRegressionFixture, datadir):
 	assert isinstance(_parse_tariffs(single_register_electricity_tariffs), RegionalTariffs)
 	assert str(_parse_tariffs(single_register_electricity_tariffs)) == "RegionalTariffs(['direct_debit_monthly'])"
 
-	file_regression.check(
-			repr(_parse_tariffs(single_register_electricity_tariffs)), encoding="UTF-8", extension=".json5"
+	advanced_file_regression.check(
+			repr(_parse_tariffs(single_register_electricity_tariffs)),
+			extension=".json5",
 			)
 
 	tariffs: Dict[str, Dict[str, Tariff]] = {}

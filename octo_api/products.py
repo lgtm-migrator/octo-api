@@ -320,5 +320,5 @@ class RegionalQuotes(Dict[str, Dict[str, Dict[str, Quote]]]):
 
 @register_pretty(RegionalQuotes)
 @register_pretty(RegionalTariffs)
-def pretty_regional_tariffs(value: Union[RegionalTariffs, RegionalQuotes], ctx) -> str:
+def pretty_regional_tariffs(value: Union[RegionalTariffs, RegionalQuotes], ctx: Any) -> str:
 	return str(value)

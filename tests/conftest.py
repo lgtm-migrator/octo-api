@@ -2,7 +2,7 @@
 import json
 import os
 import pathlib
-from typing import Callable
+from typing import Any, Callable, Dict, Iterator, Tuple
 from urllib.parse import quote
 
 # 3rd party
@@ -16,12 +16,12 @@ import octo_api.api
 
 
 @pytest.fixture(scope="session")
-def httpserver_listen_address():
+def httpserver_listen_address() -> Tuple[str, int]:
 	return get_httpserver_listen_address()
 
 
 @pytest.fixture(scope="session")
-def httpserver(httpserver_listen_address):
+def httpserver(httpserver_listen_address: Tuple[str, int]) -> Iterator[PluginHTTPServer]:
 	if Plugin.SERVER:
 		Plugin.SERVER.clear()
 		yield Plugin.SERVER
@@ -42,12 +42,12 @@ responses = pathlib.Path(__file__).parent / "responses"
 
 
 @pytest.fixture(scope="session")
-def api(httpserver: HTTPServer):
+def api(httpserver: HTTPServer) -> octo_api.api.OctoAPI:
 	a = octo_api.api.OctoAPI("token")
 	assert a.API_KEY is not None
 	assert a.API_KEY.value == "token"
 
-	def respond(url, **params):
+	def respond(url: str, **params) -> Callable[[Callable], Callable]:
 
 		query_params = '&'.join(
 				f"{name}={quote(str(value)).replace('%20', '+')}" for name, value in params.items()
@@ -61,22 +61,22 @@ def api(httpserver: HTTPServer):
 
 		return deco
 
-	def respond_from_file(filename: pathlib.Path, url: str, **params):
+	def respond_from_file(filename: pathlib.Path, url: str, **params) -> None:
 
 		@respond(url, **params)
-		def func():
+		def func() -> Dict[str, Any]:
 			return json.loads(filename.read_text())
 
-	def null_response(url: str, **params):
+	def null_response(url: str, **params) -> None:
 
 		@respond(url, **params)
-		def func():
+		def func() -> Dict[str, Any]:
 			return {"count": 0, "next": None, "previous": None, "results": []}
 
-	def respond_404(url: str, **params):
+	def respond_404(url: str, **params) -> None:
 
 		@respond(url, **params)
-		def func():
+		def func() -> Dict[str, str]:
 			return {"detail": "Not found."}
 
 	respond_404("/v1")
@@ -110,7 +110,7 @@ def api(httpserver: HTTPServer):
 
 	@respond("/v1/industry/grid-supply-points/", postcode="SW1A 1AA")
 	@respond("/v1/industry/grid-supply-points/", postcode="SW1A1AA")
-	def grid_supply_point():
+	def grid_supply_point() -> Dict[str, Any]:
 		return {"count": 1, "next": None, "previous": None, "results": [{"group_id": "_C"}]}
 
 	null_response("/v1/industry/grid-supply-points/", postcode=12345)
@@ -174,6 +174,6 @@ def api(httpserver: HTTPServer):
 
 
 @pytest.fixture()
-def original_datadir(request):
+def original_datadir(request) -> pathlib.Path:
 	# Work around pycharm confusing datadir with test file.
 	return pathlib.Path(os.path.splitext(request.module.__file__)[0] + '_')

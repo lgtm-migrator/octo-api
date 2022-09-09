@@ -27,7 +27,6 @@ Class for handling paginated API responses.
 #
 
 # stdlib
-import re
 from typing import Any, Dict, Iterable, Iterator, List, MutableMapping, Optional, Type, TypeVar, Union, overload
 from urllib.parse import parse_qs, urlparse
 
@@ -99,7 +98,7 @@ class PaginatedResponse(Iterable[_T]):
 			obj_type: Type = dict,
 			):
 
-		response: OctoResponse = query_url.get(**query_params)  # type: ignore
+		response: OctoResponse = query_url.get(**query_params)  # type: ignore[assignment,arg-type]
 
 		if query_params is None:
 			query_params = {}
@@ -116,7 +115,7 @@ class PaginatedResponse(Iterable[_T]):
 		self._previous_page = None
 		self._parse_pages(response)
 
-	def _parse_pages(self, response: OctoResponse):
+	def _parse_pages(self, response: OctoResponse) -> None:
 		if response["next"] is not None:
 			query = parse_qs(urlparse(response["next"]).query)
 			page = query.get("page", [])
@@ -137,12 +136,12 @@ class PaginatedResponse(Iterable[_T]):
 		else:
 			self._previous_page = None
 
-	def _get_next_page(self):
+	def _get_next_page(self) -> List[Dict[str, Any]]:
 		# print(f"Getting {self._next_page}")
-		response: OctoResponse = self.query_url.get(  # type: ignore
-				page=self._next_page,
-				**self.query_params,
-				)
+		response: OctoResponse = self.query_url.get(  # type: ignore[assignment]
+			page=self._next_page,
+			**self.query_params,
+			)
 
 		self._results.extend(response["results"])
 		self._parse_pages(response)
@@ -160,7 +159,7 @@ class PaginatedResponse(Iterable[_T]):
 			for res in self._get_next_page():
 				yield self.obj_type(**res)
 
-	def __eq__(self, other) -> bool:
+	def __eq__(self, other) -> bool:  # noqa: MAN001
 		if isinstance(other, Iterable):
 			for left, right in zip(self, other):
 				if left != right:

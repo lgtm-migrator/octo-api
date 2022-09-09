@@ -33,7 +33,7 @@ from typing import Any, Dict, NamedTuple, Optional, Type, Union
 
 # 3rd party
 import attr
-import prettyprinter  # type: ignore
+import prettyprinter  # type: ignore[import]
 from domdf_python_tools.doctools import prettify_docstrings
 from domdf_python_tools.stringlist import StringList
 from enum_tools import StrEnum
@@ -80,9 +80,7 @@ def from_iso_zulu(the_datetime: Union[str, datetime, None]) -> Optional[datetime
 	elif isinstance(the_datetime, datetime):
 		return the_datetime
 	else:
-		return datetime.fromisoformat(  # type: ignore
-				the_datetime.replace('Z', "+00:00"),
-				)
+		return datetime.fromisoformat(the_datetime.replace('Z', "+00:00"))  # type: ignore[attr-defined]
 
 
 class RateType(StrEnum):
@@ -210,7 +208,7 @@ def add_repr(cls: Type) -> Type:
 
 		__repr__.__doc__ = f"Return a string representation of the :class:`~.{cls.__name__}`."
 
-		cls.__repr__ = __repr__  # type: ignore
+		cls.__repr__ = __repr__  # type: ignore[assignment]
 		cls.__repr__.__qualname__ = f"{cls.__name__}.__repr__"
 		cls.__repr__.__module__ = cls.__module__
 

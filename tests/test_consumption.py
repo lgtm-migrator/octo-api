@@ -1,6 +1,6 @@
 # stdlib
 import datetime
-from typing import Dict
+from typing import Any
 
 # 3rd party
 import pytest
@@ -9,8 +9,7 @@ import pytest
 from octo_api.api import OctoAPI
 from octo_api.consumption import Consumption
 from octo_api.pagination import PaginatedResponse
-from octo_api.products import DetailedProduct, Product, RegionalTariffs, Tariff, _parse_tariffs
-from octo_api.utils import bst, gmt
+from octo_api.utils import bst
 
 
 def test_get_consumption(api: OctoAPI):
@@ -66,7 +65,7 @@ def test_get_consumption(api: OctoAPI):
 				("interval_end", "2020-09-28T15:00:00+01:00"),
 				]
 		)
-def test_consumption_equality(key, value):
+def test_consumption_equality(key: str, value: Any):
 	consumption = Consumption(
 			consumption=0.409,
 			interval_start=datetime.datetime(year=2020, month=9, day=30, hour=14, minute=30, second=0, tzinfo=bst),
@@ -79,10 +78,10 @@ def test_consumption_equality(key, value):
 			interval_end="2020-09-30T15:00:00+01:00",
 			)
 
-	assert consumption == Consumption(**data)  # type: ignore
+	assert consumption == Consumption(**data)  # type: ignore[arg-type]
 
 	data[key] = value
-	assert consumption != Consumption(**data)  # type: ignore
+	assert consumption != Consumption(**data)  # type: ignore[arg-type]
 
 
 def test_get_consumption_for_period(api: OctoAPI):

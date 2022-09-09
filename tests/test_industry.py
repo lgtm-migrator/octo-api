@@ -3,7 +3,7 @@ import pytest
 
 # this package
 from octo_api.api import OctoAPI
-from octo_api.utils import MeterPointDetails, Region
+from octo_api.utils import Region
 
 
 def test_get_grid_supply_point(api: OctoAPI):
