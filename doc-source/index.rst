@@ -142,6 +142,7 @@ Installation
 	:caption: Contributing
 
 	contributing
+	license
 	Source
 
 .. sidebar-links::
